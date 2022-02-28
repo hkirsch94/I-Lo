@@ -1,0 +1,176 @@
+[Stop]
+stop 
+stop the music
+volume up
+volume down
+louder
+
+[WhereBooksORKitchenUtensils]
+kitchen_utensil = (kitchen utensils | metal hammer| plate| plates| ladle | mug) {name}
+book = (book | books | novel | novels) {name}
+
+where are the <book>
+where are the <kitchen_utensil>
+
+
+[Hello]
+hello
+hi
+hey
+
+[Bye]
+bye
+bye bye
+see you later
+
+[ConditionOfILo]
+how are you
+how are you feeling
+how do you feel
+
+[LifeConditionILo]
+how is it going
+how is life
+how (is|was) your day [so far]
+
+[Yes]
+yes
+
+[ThankYou]
+thank you [very much]
+thanks
+
+[Test]
+this is a test
+
+[GetInstruction]
+instructions
+give ([me]|[some]) instructions
+([can]|[could]) you give [me] some instructions
+
+[ComeOver]
+([can you] | [please]) come here
+([can you] | [please]) come over
+([can you] | [please]) come to (me | us)
+
+[GoCharge]
+([can you] | [please]) go away (please)
+i do not need you (anymore)
+go to ([your] | [the]) docking station
+charge yourself
+charge
+go away
+
+
+[GoBathroom]
+([can you] | [please]) ([come]|[go]) to the bathroom
+
+[GoKitchen]
+([can you] | [please]) ([come]|[go]) to the kitchen
+
+[GoLivingRoom]
+([can you] | [please]) ([come]|[go]) to the living room
+
+[GoBedroom]
+([can you] | [please]) ([come]|[go]) to the bedroom
+
+[DefinitionCymry]
+can you (tell|give) me the definition of cymry
+(tell|give) me the definition of cymry
+([whats] | [what is]) the definition of cymry
+what ([is]|[are]) cymry
+cymry
+
+
+
+[DefinitionBindery]
+bindery
+of bindery
+can you (tell|give) me the definition of bindery
+(tell|give) me the definition of bindery
+([whats] | [what is]) the definition of bindery
+what ([is]|[are]) bindery
+bindery
+
+[DefinitionSymptomatology]
+can you (tell|give) me the definition of symptomatology
+(tell|give) me the definition of symptomatology
+([whats] | [what is]) the definition of symptomatology
+what ([is]|[are]) symptomatology
+symtomatology
+
+
+[DefinitionBiotaxy]
+can you (tell|give) me the definition of biotaxy
+(tell|give) me the definition of biotaxy
+what [is] the definition of biotaxy
+what ([is]|[are]) biotaxy
+biotaxy
+
+[DefinitionHendecagon]
+can you (tell | give) me the definition of hendecagon
+(tell | give) me the definition of hendecagon
+([whats] | [what is]) the definition of hendecagon
+what ([is] | [are]) hendecagon
+hendecagon
+
+[DefinitionExodontist]
+(tell | give) me the definition of exodontist
+can you (tell|give) me the definition of exodontist
+([whats] | [what is]) the definition of exodontist
+what ([is] | [are]) exodontist
+exodontist
+
+
+[ChangeBooks]
+book = (book | books | novel | novels) {name}
+books
+where do the <book> belong
+where do the <book> go
+where do I put the <book> [again]
+where am I supposed to put the <book>
+where are the <book> supposed to go
+what am I supposed to do with the <book> [again]
+can you tell me where the <book> go [again]
+
+[ChangeKitchen]
+kitchen_utensil = (kitchen utensil | kitchen utensils | metal hammer| plate| plates| ladle | mug) {name}
+book = (book | books | novel | novels) {name}
+<kitchen_utensil>
+where do the <kitchen_utensil> belong
+where do I put the <kitchen_utensil> [again]
+where do the <kitchen_utensil> go
+where am I supposed to put the <kitchen_utensil>
+where are the <kitchen_utensil> supposed to go
+what am I supposed to do with the <kitchen_utensil> [again]
+can you tell me where the <kitchen_utensil> go [again]
+
+[VerbalJoke]
+joke
+tell me a ([good]|[bad]) joke [please]
+can you tell me a ([good]|[bad]) joke [please]
+do you know a joke
+what is your favourite joke
+
+
+[VerbalMusic]
+turn [the] music on
+can you turn on by
+play [some] music
+play a song
+---------------------------------------------------------
+I-Lo AY L OW
+cymry S IH M R IY
+bindery B AY N D ER IY
+symptomatology S IH M P T AH M AH T AA L AH JH IY
+biotaxy B AY OW T AE K S IY
+hendecagon HH EH N D AH K AA G AO N
+exodontist EH K S AH D AA N T AH S T
+---------------------------------------------------------
+https://docs.google.com/document/d/1WhGcGYAuStyc6V4UenEY2a30lSqBXXcUpv0x6eXUgnI/edit
+https://docs.google.com/document/d/1A7E4DZ4FcS723bnp3Y3mJ1QD5YF-jAka-k6pYMQ0Jk0/edit
+https://flows.nodered.org/node/node-red-contrib-play-audio-file
+https://docs.mopidy.com/en/latest/installation/debian/#install-from-apt-mopidy-com
+https://superuser.com/questions/42039/change-windows-sound-volume-via-the-command-line
+https://askubuntu.com/questions/97936/terminal-command-to-set-audio-volume
+https://blog.chapagain.com.np/ubuntu-linux-increase-decrease-volume-from-command-line-keyboard-shortcut/
