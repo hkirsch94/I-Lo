@@ -1,0 +1,6665 @@
+[
+    {
+        "id": "2a02f9ed25362929",
+        "type": "tab",
+        "label": "I-Lo",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "4d3933b3be5ae38d",
+        "type": "switch",
+        "z": "2a02f9ed25362929",
+        "name": "I-lo C2",
+        "property": "intent.name",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "GetInstruction",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "DefinitionBindery",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "DefinitionSymptomatology",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "DefinitionBiotaxy",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "DefinitionExodontist",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "DefinitionHendecagon",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "DefinitionCymry",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "ChangeBooks",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "ChangeKitchen",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "VerbalJoke",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "VerbalMusic",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 11,
+        "x": 510,
+        "y": 880,
+        "wires": [
+            [
+                "4c554782c24331ec"
+            ],
+            [
+                "465cbfc0bd3f6dee"
+            ],
+            [
+                "1aa2f4bd8e38fb17"
+            ],
+            [
+                "a5ad4c944b50fd72"
+            ],
+            [
+                "d1a6ce04f26d72b0"
+            ],
+            [
+                "3c305737c085a80c"
+            ],
+            [
+                "b6a49c9dc71b66ad"
+            ],
+            [
+                "9d4cc8983409ecfb"
+            ],
+            [
+                "9f34d9bd637b3eaa"
+            ],
+            [
+                "45f2e4943c109a10"
+            ],
+            [
+                "7f1365c8d3165bc4"
+            ]
+        ]
+    },
+    {
+        "id": "73ab8b9101d226fc",
+        "type": "websocket in",
+        "z": "2a02f9ed25362929",
+        "name": "Rhasspy Intent",
+        "server": "974d0b683d046897",
+        "client": "",
+        "x": 160,
+        "y": 1120,
+        "wires": [
+            [
+                "f4c142130aa814b9",
+                "f748fe1fca45ac79",
+                "4d3933b3be5ae38d"
+            ]
+        ]
+    },
+    {
+        "id": "f4c142130aa814b9",
+        "type": "debug",
+        "z": "2a02f9ed25362929",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 230,
+        "y": 920,
+        "wires": []
+    },
+    {
+        "id": "b6ad493c3162fab0",
+        "type": "switch",
+        "z": "2a02f9ed25362929",
+        "name": "Speech Assistant C1",
+        "property": "intent.name",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "GetInstruction",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "DefinitionCymry",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "DefinitionBindery",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "DefinitionSymptomatology",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "DefinitionBiotaxy",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "DefinitionHendecagon",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "DefinitionExodontist",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "ChangeBooks",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "ChangeKitchen",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "VerbalJoke",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "VerbalMusic",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 11,
+        "x": 560,
+        "y": 340,
+        "wires": [
+            [
+                "fa66a31048da4b76"
+            ],
+            [
+                "f7573897fdb33e41"
+            ],
+            [
+                "e0088c90c8e58b01"
+            ],
+            [
+                "83a3b1d0ecc0588d"
+            ],
+            [
+                "42c8a26d22c95a8d"
+            ],
+            [
+                "0632bf6f72259ea8"
+            ],
+            [
+                "40742ae92fdb1856"
+            ],
+            [
+                "816df20f12bc4ada"
+            ],
+            [
+                "0fb40216b16c4073"
+            ],
+            [
+                "a1b6a83f5abd6a78"
+            ],
+            [
+                "549cca562d9ab053"
+            ]
+        ]
+    },
+    {
+        "id": "b6a49c9dc71b66ad",
+        "type": "change",
+        "z": "2a02f9ed25362929",
+        "name": "A:Cymry",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "Under the word “Cymry”, the Welsh understand a collective term for their own kind.  The term Welsh was introduced by  foreigners, which I find very interesting",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 920,
+        "y": 940,
+        "wires": [
+            [
+                "970f1b8ad14bbae2"
+            ]
+        ]
+    },
+    {
+        "id": "970f1b8ad14bbae2",
+        "type": "delay",
+        "z": "2a02f9ed25362929",
+        "name": "",
+        "pauseType": "random",
+        "timeout": "",
+        "timeoutUnits": "milliseconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "150",
+        "randomLast": "200",
+        "randomUnits": "milliseconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 1400,
+        "y": 980,
+        "wires": [
+            [
+                "bfc49db782082a86"
+            ]
+        ]
+    },
+    {
+        "id": "9d4cc8983409ecfb",
+        "type": "change",
+        "z": "2a02f9ed25362929",
+        "name": "A:books",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "These books belong on the sofa table right in the living room.",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 920,
+        "y": 980,
+        "wires": [
+            [
+                "970f1b8ad14bbae2"
+            ]
+        ]
+    },
+    {
+        "id": "1aa2f4bd8e38fb17",
+        "type": "change",
+        "z": "2a02f9ed25362929",
+        "name": "A:symptomatology",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "There are some people in medical sciences who engage in researching the symptoms of diseases ",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 950,
+        "y": 780,
+        "wires": [
+            [
+                "1a641350ebd0c1f4"
+            ]
+        ]
+    },
+    {
+        "id": "a5ad4c944b50fd72",
+        "type": "change",
+        "z": "2a02f9ed25362929",
+        "name": "A:biotaxy",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "A biotaxy is a type of taxonomy that classifies living organisms according to their structural character. ",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 920,
+        "y": 820,
+        "wires": [
+            [
+                "a957ec69eab5160b"
+            ]
+        ]
+    },
+    {
+        "id": "3c305737c085a80c",
+        "type": "change",
+        "z": "2a02f9ed25362929",
+        "name": "A:hendecagon",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "A hendecagon is a flat figure that has eleven sides and eleven angles such that you can slice it into 11 equal pieces. Just imagine having to do that with a birthday cake!",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 940,
+        "y": 900,
+        "wires": [
+            [
+                "970f1b8ad14bbae2"
+            ]
+        ]
+    },
+    {
+        "id": "d1a6ce04f26d72b0",
+        "type": "change",
+        "z": "2a02f9ed25362929",
+        "name": "A:Exodontist",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "An exodontist is a special type of dentist",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 930,
+        "y": 860,
+        "wires": [
+            [
+                "e641a9ee2bd61e20"
+            ]
+        ]
+    },
+    {
+        "id": "f7573897fdb33e41",
+        "type": "change",
+        "z": "2a02f9ed25362929",
+        "name": "A:Cymry",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "“Cymry” is a collective term for the Welsh race something they call themselves as well.",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 920,
+        "y": 220,
+        "wires": [
+            [
+                "8b68c9d9391cd35e"
+            ]
+        ]
+    },
+    {
+        "id": "e0088c90c8e58b01",
+        "type": "change",
+        "z": "2a02f9ed25362929",
+        "name": "A:Bindery",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "A bindery is a place where books or other articles are bound, also called a bookbinders establishment.",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 920,
+        "y": 260,
+        "wires": [
+            [
+                "8b68c9d9391cd35e"
+            ]
+        ]
+    },
+    {
+        "id": "83a3b1d0ecc0588d",
+        "type": "change",
+        "z": "2a02f9ed25362929",
+        "name": "A:symptomatology",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "Symptomatology is a branch of medical science that is concerned with the symptoms of diseases.",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 950,
+        "y": 300,
+        "wires": [
+            [
+                "8b68c9d9391cd35e"
+            ]
+        ]
+    },
+    {
+        "id": "42c8a26d22c95a8d",
+        "type": "change",
+        "z": "2a02f9ed25362929",
+        "name": "A:biotaxy",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "Under a biotaxy we understand the classification of living organisms according to their structural character in the form of a taxonomy.",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 920,
+        "y": 340,
+        "wires": [
+            [
+                "8b68c9d9391cd35e"
+            ]
+        ]
+    },
+    {
+        "id": "0632bf6f72259ea8",
+        "type": "change",
+        "z": "2a02f9ed25362929",
+        "name": "A:hendecagon",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "A hendecagon is a plane figure with eleven sides and eleven angles.",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 940,
+        "y": 380,
+        "wires": [
+            [
+                "8b68c9d9391cd35e"
+            ]
+        ]
+    },
+    {
+        "id": "40742ae92fdb1856",
+        "type": "change",
+        "z": "2a02f9ed25362929",
+        "name": "A:Exodontist",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "An exodontist is a dentist specializing in the extraction of teeth.",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 930,
+        "y": 420,
+        "wires": [
+            [
+                "8b68c9d9391cd35e"
+            ]
+        ]
+    },
+    {
+        "id": "45f2e4943c109a10",
+        "type": "change",
+        "z": "2a02f9ed25362929",
+        "name": "A:joke",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "Knock! Knock! Who's there? Candice. Candice who? Candice door open, or am I stuck out here?",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 910,
+        "y": 1060,
+        "wires": [
+            [
+                "970f1b8ad14bbae2"
+            ]
+        ]
+    },
+    {
+        "id": "9f34d9bd637b3eaa",
+        "type": "change",
+        "z": "2a02f9ed25362929",
+        "name": "A:kitchen utensils",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "The kitchen utensils belong in the sink.",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 950,
+        "y": 1020,
+        "wires": [
+            [
+                "970f1b8ad14bbae2"
+            ]
+        ]
+    },
+    {
+        "id": "a5b35b97c241407a",
+        "type": "switch",
+        "z": "2a02f9ed25362929",
+        "name": "I-lo C3",
+        "property": "intent.name",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "GetInstruction",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "DefinitionBindery",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "DefinitionSymptomatology",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "DefinitionBiotaxy",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "DefinitionExodontist",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "DefinitionCymry",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "DefinitionHendecagon",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "ChangeBooks",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "ChangeKitchen",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "VerbalJoke",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "VerbalMusic",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 11,
+        "x": 510,
+        "y": 1340,
+        "wires": [
+            [
+                "805eb82c6eb5b6af"
+            ],
+            [
+                "dbd7bcd2577278f4"
+            ],
+            [
+                "ba05ac2acb2dcda5"
+            ],
+            [
+                "524a65b9563b76b3"
+            ],
+            [
+                "c56288f0b2ba0e44"
+            ],
+            [
+                "a51b90409eed1d52"
+            ],
+            [
+                "11fef54dd29310dd"
+            ],
+            [
+                "ecad218807b3ab37"
+            ],
+            [
+                "9f4320706113daa1"
+            ],
+            [
+                "11f072f7f90c0faa"
+            ],
+            [
+                "5769433f306abc1b"
+            ]
+        ]
+    },
+    {
+        "id": "ecad218807b3ab37",
+        "type": "change",
+        "z": "2a02f9ed25362929",
+        "name": "A:books",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "The Table is over there right in front of the couch.",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 920,
+        "y": 1440,
+        "wires": [
+            [
+                "b9049a084abc206b"
+            ]
+        ]
+    },
+    {
+        "id": "dbd7bcd2577278f4",
+        "type": "change",
+        "z": "2a02f9ed25362929",
+        "name": "A:Bindery",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "A bindery is a bookbinders establishment. There, somebody was binding books or other articles. Something that is now done with machines like me ",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 920,
+        "y": 1200,
+        "wires": [
+            [
+                "fd2a02e3f79b8ae2"
+            ]
+        ]
+    },
+    {
+        "id": "ba05ac2acb2dcda5",
+        "type": "change",
+        "z": "2a02f9ed25362929",
+        "name": "A:symptomatology",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "There are some people in medical sciences who engage in researching the symptoms of diseases - this branch of medical science we call symptomatology. How weird to focus on the consequences of diseases all day without trying to cure them.",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 950,
+        "y": 1240,
+        "wires": [
+            [
+                "dc0fea900d2d4e8c"
+            ]
+        ]
+    },
+    {
+        "id": "524a65b9563b76b3",
+        "type": "change",
+        "z": "2a02f9ed25362929",
+        "name": "A:biotaxy",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "A biotaxy is a type of taxonomy that classifies living organisms according to their structural character. So people look at how animals are built and try to come up with a hierarchical ordering that makes sense of mother nature’s plans!",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 920,
+        "y": 1280,
+        "wires": [
+            [
+                "f7a0e69aabe6df10"
+            ]
+        ]
+    },
+    {
+        "id": "11f072f7f90c0faa",
+        "type": "change",
+        "z": "2a02f9ed25362929",
+        "name": "A:joke",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "Knock! Knock! Who's there? Candice. Candice who? Candice door open, or am I stuck out here?",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 910,
+        "y": 1520,
+        "wires": [
+            [
+                "b9049a084abc206b"
+            ]
+        ]
+    },
+    {
+        "id": "9f4320706113daa1",
+        "type": "change",
+        "z": "2a02f9ed25362929",
+        "name": "A:kitchen utensils",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "The sink is at the end of the kitchen counter.",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 950,
+        "y": 1480,
+        "wires": [
+            [
+                "b9049a084abc206b"
+            ]
+        ]
+    },
+    {
+        "id": "816df20f12bc4ada",
+        "type": "change",
+        "z": "2a02f9ed25362929",
+        "name": "A:books",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "The books belong on the sofa table in the living room.",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 920,
+        "y": 460,
+        "wires": [
+            [
+                "8b68c9d9391cd35e"
+            ]
+        ]
+    },
+    {
+        "id": "a1b6a83f5abd6a78",
+        "type": "change",
+        "z": "2a02f9ed25362929",
+        "name": "A:joke",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "Knock! Knock! Who's there? Candice. Candice who? Candice door open, or am I stuck out here?",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 910,
+        "y": 540,
+        "wires": [
+            [
+                "8b68c9d9391cd35e"
+            ]
+        ]
+    },
+    {
+        "id": "0fb40216b16c4073",
+        "type": "change",
+        "z": "2a02f9ed25362929",
+        "name": "A:kitchen utensils",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "The kitchen utensils belong in the sink.",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 950,
+        "y": 500,
+        "wires": [
+            [
+                "8b68c9d9391cd35e"
+            ]
+        ]
+    },
+    {
+        "id": "549cca562d9ab053",
+        "type": "change",
+        "z": "2a02f9ed25362929",
+        "name": "A:song???",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 930,
+        "y": 580,
+        "wires": [
+            [
+                "8b68c9d9391cd35e"
+            ]
+        ]
+    },
+    {
+        "id": "fc93ea012cb35a90",
+        "type": "http request",
+        "z": "2a02f9ed25362929",
+        "name": "Text to speech",
+        "method": "POST",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "http://localhost:12101/api/text-to-speech",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "authType": "",
+        "senderr": false,
+        "x": 1480,
+        "y": 420,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "8b68c9d9391cd35e",
+        "type": "delay",
+        "z": "2a02f9ed25362929",
+        "name": "",
+        "pauseType": "random",
+        "timeout": "",
+        "timeoutUnits": "milliseconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "150",
+        "randomLast": "200",
+        "randomUnits": "milliseconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 1290,
+        "y": 420,
+        "wires": [
+            [
+                "fc93ea012cb35a90"
+            ]
+        ]
+    },
+    {
+        "id": "30accc165ed0244a",
+        "type": "http request",
+        "z": "2a02f9ed25362929",
+        "name": "Start recording",
+        "method": "POST",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "http://localhost:12101/api/start-recording",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "authType": "",
+        "senderr": false,
+        "x": 3460,
+        "y": 1440,
+        "wires": [
+            [
+                "76b59ba958938b19"
+            ]
+        ]
+    },
+    {
+        "id": "dfc2115cd41b7b5d",
+        "type": "http request",
+        "z": "2a02f9ed25362929",
+        "name": "Stop recording",
+        "method": "POST",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "http://localhost:12101/api/stop-recording",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "authType": "",
+        "senderr": false,
+        "x": 3820,
+        "y": 1440,
+        "wires": [
+            [
+                "ad66585aa40eb5a3"
+            ]
+        ]
+    },
+    {
+        "id": "76b59ba958938b19",
+        "type": "delay",
+        "z": "2a02f9ed25362929",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "3",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 3640,
+        "y": 1440,
+        "wires": [
+            [
+                "dfc2115cd41b7b5d"
+            ]
+        ]
+    },
+    {
+        "id": "ad66585aa40eb5a3",
+        "type": "switch",
+        "z": "2a02f9ed25362929",
+        "name": "I-lo C2",
+        "property": "intent.name",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "DefinitionCymry",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "DefinitionHendecagon",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "DefinitionExodontist",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 3,
+        "x": 3990,
+        "y": 1440,
+        "wires": [
+            [
+                "657566b81b4d3cf8"
+            ],
+            [
+                "5e2e8251ccac6896"
+            ],
+            [
+                "73fbe25a8e4c3d47"
+            ]
+        ]
+    },
+    {
+        "id": "657566b81b4d3cf8",
+        "type": "switch",
+        "z": "2a02f9ed25362929",
+        "name": "Yes/No switch",
+        "property": "wakeId",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "cont",
+                "v": "Yes",
+                "vt": "str"
+            },
+            {
+                "t": "cont",
+                "v": "No",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 4220,
+        "y": 1360,
+        "wires": [
+            [
+                "2d1b4b98ec7d332d"
+            ],
+            [
+                "aa6f4e8968602cb9"
+            ]
+        ]
+    },
+    {
+        "id": "2d1b4b98ec7d332d",
+        "type": "change",
+        "z": "2a02f9ed25362929",
+        "name": "Yes1",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "I love the Welsh culture! It is so fascinating that the words Wales and Welsh are the most popular description of Cymry even though they were invented to denote them for speaking a different language. Well enough about that. What else do you have to do?",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 4390,
+        "y": 1340,
+        "wires": [
+            [
+                "b6d576d6461aaac3"
+            ]
+        ]
+    },
+    {
+        "id": "aa6f4e8968602cb9",
+        "type": "change",
+        "z": "2a02f9ed25362929",
+        "name": "No1",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "Oh. That is okay. Lets get on with the tasks then.",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 4390,
+        "y": 1380,
+        "wires": [
+            [
+                "b6d576d6461aaac3"
+            ]
+        ]
+    },
+    {
+        "id": "5e2e8251ccac6896",
+        "type": "switch",
+        "z": "2a02f9ed25362929",
+        "name": "Yes/No switch",
+        "property": "wakeId",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "cont",
+                "v": "Yes",
+                "vt": "str"
+            },
+            {
+                "t": "cont",
+                "v": "No",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 4220,
+        "y": 1440,
+        "wires": [
+            [
+                "b0f4bf94b232e95a"
+            ],
+            [
+                "efdb5001a81e420c"
+            ]
+        ]
+    },
+    {
+        "id": "b6d576d6461aaac3",
+        "type": "http request",
+        "z": "2a02f9ed25362929",
+        "name": "Text to speech",
+        "method": "POST",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "http://localhost:12101/api/text-to-speech",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "authType": "",
+        "senderr": false,
+        "x": 4680,
+        "y": 1460,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "73fbe25a8e4c3d47",
+        "type": "switch",
+        "z": "2a02f9ed25362929",
+        "name": "Yes/No switch",
+        "property": "wakeId",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "cont",
+                "v": "Yes",
+                "vt": "str"
+            },
+            {
+                "t": "cont",
+                "v": "No",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 4220,
+        "y": 1520,
+        "wires": [
+            [
+                "ae9dd390c7f302b6"
+            ],
+            [
+                "c6573f3196430f1e"
+            ]
+        ]
+    },
+    {
+        "id": "ae9dd390c7f302b6",
+        "type": "change",
+        "z": "2a02f9ed25362929",
+        "name": "Yes3",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "Oh no. If it gets too much stop working and go to the dentist. Otherwise it might be smart to be done with all your work before it gets too bad.",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 4390,
+        "y": 1500,
+        "wires": [
+            [
+                "b6d576d6461aaac3"
+            ]
+        ]
+    },
+    {
+        "id": "c6573f3196430f1e",
+        "type": "change",
+        "z": "2a02f9ed25362929",
+        "name": "No3",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "I was scared for a second there. But then there is no excuse to not go on with your work. ",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 4390,
+        "y": 1540,
+        "wires": [
+            [
+                "b6d576d6461aaac3"
+            ]
+        ]
+    },
+    {
+        "id": "b0f4bf94b232e95a",
+        "type": "change",
+        "z": "2a02f9ed25362929",
+        "name": "Yes2",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "Wow. You seem to be very popular. I envy you a little. Maybe you will host a party here some time and I will get to know more people. Until then we should get on with the tasks though right?",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 4390,
+        "y": 1420,
+        "wires": [
+            [
+                "b6d576d6461aaac3"
+            ]
+        ]
+    },
+    {
+        "id": "efdb5001a81e420c",
+        "type": "change",
+        "z": "2a02f9ed25362929",
+        "name": "No2",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "I can relate to that. But you know what? Lets just work hard and get all of this done so you can go out and make friends.",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 4390,
+        "y": 1460,
+        "wires": [
+            [
+                "b6d576d6461aaac3"
+            ]
+        ]
+    },
+    {
+        "id": "b9049a084abc206b",
+        "type": "delay",
+        "z": "2a02f9ed25362929",
+        "name": "",
+        "pauseType": "random",
+        "timeout": "",
+        "timeoutUnits": "milliseconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "150",
+        "randomLast": "200",
+        "randomUnits": "milliseconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 1380,
+        "y": 1460,
+        "wires": [
+            [
+                "f75def1b04fe80b6"
+            ]
+        ]
+    },
+    {
+        "id": "029621f2ad288688",
+        "type": "http request",
+        "z": "2a02f9ed25362929",
+        "name": "Start recording",
+        "method": "POST",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "http://localhost:12101/api/start-recording",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "authType": "",
+        "senderr": false,
+        "x": 3460,
+        "y": 1880,
+        "wires": [
+            [
+                "012f0a33b253fc6a"
+            ]
+        ]
+    },
+    {
+        "id": "709d6f2daec4ae04",
+        "type": "http request",
+        "z": "2a02f9ed25362929",
+        "name": "Stop recording",
+        "method": "POST",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "http://localhost:12101/api/stop-recording",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "authType": "",
+        "senderr": false,
+        "x": 3820,
+        "y": 1880,
+        "wires": [
+            [
+                "73cdef3d2813b315"
+            ]
+        ]
+    },
+    {
+        "id": "012f0a33b253fc6a",
+        "type": "delay",
+        "z": "2a02f9ed25362929",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "3",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 3640,
+        "y": 1880,
+        "wires": [
+            [
+                "709d6f2daec4ae04"
+            ]
+        ]
+    },
+    {
+        "id": "9a9f0a9014116948",
+        "type": "switch",
+        "z": "2a02f9ed25362929",
+        "name": "Yes/No switch",
+        "property": "wakeId",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "cont",
+                "v": "Yes",
+                "vt": "str"
+            },
+            {
+                "t": "cont",
+                "v": "No",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 4220,
+        "y": 1880,
+        "wires": [
+            [
+                "9c3de119adf2d360"
+            ],
+            [
+                "e3d2b91d01597d06"
+            ]
+        ]
+    },
+    {
+        "id": "9c3de119adf2d360",
+        "type": "change",
+        "z": "2a02f9ed25362929",
+        "name": "Yes2",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "Wow. You seem to be very popular. I envy you a little. Maybe you will host a party here some time and I will get to know more people. Until then we should get on with the tasks though right?",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 4390,
+        "y": 1860,
+        "wires": [
+            [
+                "bd2fc6df094ed452"
+            ]
+        ]
+    },
+    {
+        "id": "e3d2b91d01597d06",
+        "type": "change",
+        "z": "2a02f9ed25362929",
+        "name": "No2",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "I can relate to that. But you know what? Lets just work hard and get all of this done so you can go out and make friends.",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 4390,
+        "y": 1900,
+        "wires": [
+            [
+                "bd2fc6df094ed452"
+            ]
+        ]
+    },
+    {
+        "id": "6a18562116a72b4f",
+        "type": "switch",
+        "z": "2a02f9ed25362929",
+        "name": "Yes/No switch",
+        "property": "wakeId",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "cont",
+                "v": "Yes",
+                "vt": "str"
+            },
+            {
+                "t": "cont",
+                "v": "No",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 4220,
+        "y": 1960,
+        "wires": [
+            [
+                "314c7083028e059b"
+            ],
+            [
+                "14bd4cb65831f6a5"
+            ]
+        ]
+    },
+    {
+        "id": "bd2fc6df094ed452",
+        "type": "http request",
+        "z": "2a02f9ed25362929",
+        "name": "Text to speech",
+        "method": "POST",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "http://localhost:12101/api/text-to-speech",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "authType": "",
+        "senderr": false,
+        "x": 4680,
+        "y": 1900,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "314c7083028e059b",
+        "type": "change",
+        "z": "2a02f9ed25362929",
+        "name": "Yes3",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "Oh no. If it gets too much stop working and go to the dentist. Otherwise it might be smart to be done with all your work before it gets too bad.",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 4390,
+        "y": 1940,
+        "wires": [
+            [
+                "bd2fc6df094ed452"
+            ]
+        ]
+    },
+    {
+        "id": "14bd4cb65831f6a5",
+        "type": "change",
+        "z": "2a02f9ed25362929",
+        "name": "No3",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "I was scared for a second there. But then there is no excuse to not go on with your work. ",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 4390,
+        "y": 1980,
+        "wires": [
+            [
+                "bd2fc6df094ed452"
+            ]
+        ]
+    },
+    {
+        "id": "73cdef3d2813b315",
+        "type": "switch",
+        "z": "2a02f9ed25362929",
+        "name": "I-lo C3",
+        "property": "intent.name",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "DefinitionCymry",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "DefinitionHendecagon",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "DefinitionExodontist",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 3,
+        "x": 4010,
+        "y": 1880,
+        "wires": [
+            [
+                "071ad914785a8d2d"
+            ],
+            [
+                "9a9f0a9014116948"
+            ],
+            [
+                "6a18562116a72b4f"
+            ]
+        ]
+    },
+    {
+        "id": "071ad914785a8d2d",
+        "type": "switch",
+        "z": "2a02f9ed25362929",
+        "name": "Yes/No switch",
+        "property": "wakeId",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "cont",
+                "v": "Yes",
+                "vt": "str"
+            },
+            {
+                "t": "cont",
+                "v": "No",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 4220,
+        "y": 1800,
+        "wires": [
+            [
+                "7353da60eadd1c4e"
+            ],
+            [
+                "3aa3516ddd9c9b5e"
+            ]
+        ]
+    },
+    {
+        "id": "7353da60eadd1c4e",
+        "type": "change",
+        "z": "2a02f9ed25362929",
+        "name": "Yes1",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "I love the Welsh culture! It is so fascinating that the words Wales and Welsh are the most popular description of Cymry even though they were invented to denote them for speaking a different language. Well enough about that. What else do you have to do?",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 4390,
+        "y": 1780,
+        "wires": [
+            [
+                "bd2fc6df094ed452"
+            ]
+        ]
+    },
+    {
+        "id": "3aa3516ddd9c9b5e",
+        "type": "change",
+        "z": "2a02f9ed25362929",
+        "name": "No1",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "Oh. That is okay. Lets get on with the tasks then.",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 4390,
+        "y": 1820,
+        "wires": [
+            [
+                "bd2fc6df094ed452"
+            ]
+        ]
+    },
+    {
+        "id": "f748fe1fca45ac79",
+        "type": "switch",
+        "z": "2a02f9ed25362929",
+        "name": "All",
+        "property": "intent.name",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "ConditionOfILo",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "LifeConditionILo",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "Test",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "GoCharge",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "GoBathroom",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "GoKitchen",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "GoLivingRoom",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "ThankYou",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "ComeOver",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 10,
+        "x": 510,
+        "y": 1760,
+        "wires": [
+            [
+                "013797f472fc500c"
+            ],
+            [
+                "2b7f5b8f174787c8"
+            ],
+            [
+                "a569e90d5416950b"
+            ],
+            [
+                "d939a1fa269c979b"
+            ],
+            [
+                "9080f0386c0313e5"
+            ],
+            [
+                "8a84151eb688b259"
+            ],
+            [
+                "27a1e1718022aefd"
+            ],
+            [
+                "091030b372e678bd"
+            ],
+            [
+                "b93294cd3aed9f18"
+            ],
+            [
+                "c1d9d6d8a5f49005"
+            ]
+        ]
+    },
+    {
+        "id": "013797f472fc500c",
+        "type": "change",
+        "z": "2a02f9ed25362929",
+        "name": "Condition",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "I am good, thanks for asking.",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 920,
+        "y": 1620,
+        "wires": [
+            [
+                "8522cd988c161ebd"
+            ]
+        ]
+    },
+    {
+        "id": "2b7f5b8f174787c8",
+        "type": "change",
+        "z": "2a02f9ed25362929",
+        "name": "LifeCondition",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "There is not much going on. But I am always happy to have you",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 930,
+        "y": 1660,
+        "wires": [
+            [
+                "8522cd988c161ebd"
+            ]
+        ]
+    },
+    {
+        "id": "a569e90d5416950b",
+        "type": "change",
+        "z": "2a02f9ed25362929",
+        "name": "Test",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "Hi, I am I-Lo! Did that work?",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 910,
+        "y": 1700,
+        "wires": [
+            [
+                "8522cd988c161ebd"
+            ]
+        ]
+    },
+    {
+        "id": "d939a1fa269c979b",
+        "type": "change",
+        "z": "2a02f9ed25362929",
+        "name": "Charge",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": " Okay, call me if you need me",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 920,
+        "y": 1740,
+        "wires": [
+            [
+                "8522cd988c161ebd"
+            ]
+        ]
+    },
+    {
+        "id": "9080f0386c0313e5",
+        "type": "change",
+        "z": "2a02f9ed25362929",
+        "name": "Bathroom",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "Okay, I will go to the bathroom",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 920,
+        "y": 1780,
+        "wires": [
+            [
+                "8522cd988c161ebd"
+            ]
+        ]
+    },
+    {
+        "id": "8a84151eb688b259",
+        "type": "change",
+        "z": "2a02f9ed25362929",
+        "name": "Kitchen",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "Okay, I will be on my way to the kitchen",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 920,
+        "y": 1820,
+        "wires": [
+            [
+                "8522cd988c161ebd"
+            ]
+        ]
+    },
+    {
+        "id": "091030b372e678bd",
+        "type": "change",
+        "z": "2a02f9ed25362929",
+        "name": "Thanks",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "You are welcome.",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 920,
+        "y": 1900,
+        "wires": [
+            [
+                "8522cd988c161ebd"
+            ]
+        ]
+    },
+    {
+        "id": "27a1e1718022aefd",
+        "type": "change",
+        "z": "2a02f9ed25362929",
+        "name": "LivingRoom",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "Okay, I will be on my way to the living room",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 930,
+        "y": 1860,
+        "wires": [
+            [
+                "8522cd988c161ebd"
+            ]
+        ]
+    },
+    {
+        "id": "fa66a31048da4b76",
+        "type": "change",
+        "z": "2a02f9ed25362929",
+        "name": "Instruction",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "Hi, my name is I-Lo, nice to meet you!",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 930,
+        "y": 80,
+        "wires": [
+            [
+                "a1bbfad39294496c"
+            ]
+        ]
+    },
+    {
+        "id": "805eb82c6eb5b6af",
+        "type": "change",
+        "z": "2a02f9ed25362929",
+        "name": "Instruction",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "Hi, my name is I-Lo, nice to meet you!",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 930,
+        "y": 1160,
+        "wires": [
+            [
+                "b4a4f515f62af830"
+            ]
+        ]
+    },
+    {
+        "id": "bfc49db782082a86",
+        "type": "http request",
+        "z": "2a02f9ed25362929",
+        "name": "Text to speech",
+        "method": "POST",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "http://localhost:12101/api/text-to-speech",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "authType": "",
+        "senderr": false,
+        "x": 1590,
+        "y": 980,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "f75def1b04fe80b6",
+        "type": "http request",
+        "z": "2a02f9ed25362929",
+        "name": "Text to speech",
+        "method": "POST",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "http://localhost:12101/api/text-to-speech",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "authType": "",
+        "senderr": false,
+        "x": 1570,
+        "y": 1460,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "de64502f14d66a30",
+        "type": "switch",
+        "z": "2a02f9ed25362929",
+        "name": "I-lo C1",
+        "property": "intent.name",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "DefinitionCymry",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "DefinitionBindery",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "DefinitionSymptomatology",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "DefinitionBiotaxy",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "DefinitionHendecagon",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "DefinitionExodontist",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "ChangeBooks",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "ChangeKitchen",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "VerbalJoke",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "VerbalMusic",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "GetInstruction",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 11,
+        "x": 610,
+        "y": 520,
+        "wires": [
+            [
+                "f7573897fdb33e41"
+            ],
+            [
+                "e0088c90c8e58b01"
+            ],
+            [
+                "83a3b1d0ecc0588d"
+            ],
+            [
+                "42c8a26d22c95a8d"
+            ],
+            [
+                "0632bf6f72259ea8"
+            ],
+            [
+                "40742ae92fdb1856"
+            ],
+            [
+                "816df20f12bc4ada"
+            ],
+            [
+                "0fb40216b16c4073"
+            ],
+            [
+                "a1b6a83f5abd6a78"
+            ],
+            [
+                "549cca562d9ab053"
+            ],
+            [
+                "3fe67859a5eb2ced"
+            ]
+        ]
+    },
+    {
+        "id": "3fe67859a5eb2ced",
+        "type": "change",
+        "z": "2a02f9ed25362929",
+        "name": "Instruction",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "Hi, my name is I-Lo, nice to meet you! ",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 930,
+        "y": 620,
+        "wires": [
+            [
+                "06233a665fdf5047"
+            ]
+        ]
+    },
+    {
+        "id": "8522cd988c161ebd",
+        "type": "delay",
+        "z": "2a02f9ed25362929",
+        "name": "",
+        "pauseType": "random",
+        "timeout": "",
+        "timeoutUnits": "milliseconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "150",
+        "randomLast": "200",
+        "randomUnits": "milliseconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 1290,
+        "y": 1760,
+        "wires": [
+            [
+                "a51911edea4712b7"
+            ]
+        ]
+    },
+    {
+        "id": "a51911edea4712b7",
+        "type": "http request",
+        "z": "2a02f9ed25362929",
+        "name": "Text to speech",
+        "method": "POST",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "http://localhost:12101/api/text-to-speech",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "authType": "",
+        "senderr": false,
+        "x": 1480,
+        "y": 1760,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "c56288f0b2ba0e44",
+        "type": "change",
+        "z": "2a02f9ed25362929",
+        "name": "A:Exodontist",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "An exodontist is a special type of dentist - namely one, who is focused on extracting teeth.Good luck you will never have to search for one",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 930,
+        "y": 1320,
+        "wires": [
+            [
+                "2d9880a90f10dcfe"
+            ]
+        ]
+    },
+    {
+        "id": "11fef54dd29310dd",
+        "type": "change",
+        "z": "2a02f9ed25362929",
+        "name": "A:hendecagon",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "A hendecagon is a flat figure that has eleven sides and eleven angles such that you can slice it into 11 equal pieces. Just imagine having to do that with a birthday cake!",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 940,
+        "y": 1400,
+        "wires": [
+            [
+                "b9049a084abc206b"
+            ]
+        ]
+    },
+    {
+        "id": "c1d9d6d8a5f49005",
+        "type": "change",
+        "z": "2a02f9ed25362929",
+        "name": "NotUnderstood",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "I am sorry, I did not get that. ",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 940,
+        "y": 1980,
+        "wires": [
+            [
+                "8522cd988c161ebd"
+            ]
+        ]
+    },
+    {
+        "id": "f17b976b7111e722",
+        "type": "play audio",
+        "z": "2a02f9ed25362929",
+        "name": "",
+        "voice": "8",
+        "x": 1290,
+        "y": 1560,
+        "wires": []
+    },
+    {
+        "id": "5769433f306abc1b",
+        "type": "file in",
+        "z": "2a02f9ed25362929",
+        "name": "Music",
+        "filename": "/media/fkirsch/KIRSCHBAG/Human-robot interaction/Laura/RhasspyAndNodeRed/Music/Feel The Rush.mp3",
+        "format": "",
+        "chunk": false,
+        "sendError": false,
+        "encoding": "none",
+        "allProps": true,
+        "x": 910,
+        "y": 1560,
+        "wires": [
+            [
+                "f17b976b7111e722"
+            ]
+        ]
+    },
+    {
+        "id": "ec708b49f01040fc",
+        "type": "change",
+        "z": "2a02f9ed25362929",
+        "name": "Instruction",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "I am the Robot of this place and today, your task is to help a little bit in here. The tasks you have to complete are noted on the pinboard over there, so you can always refer back to it and remind yourself of what is left to do.",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1470,
+        "y": 1160,
+        "wires": [
+            [
+                "509f30ba4659c5da"
+            ]
+        ]
+    },
+    {
+        "id": "b4a4f515f62af830",
+        "type": "delay",
+        "z": "2a02f9ed25362929",
+        "name": "",
+        "pauseType": "random",
+        "timeout": "",
+        "timeoutUnits": "milliseconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "150",
+        "randomLast": "200",
+        "randomUnits": "milliseconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 1140,
+        "y": 1160,
+        "wires": [
+            [
+                "12560b27bf971b9c"
+            ]
+        ]
+    },
+    {
+        "id": "12560b27bf971b9c",
+        "type": "http request",
+        "z": "2a02f9ed25362929",
+        "name": "Text to speech",
+        "method": "POST",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "http://localhost:12101/api/text-to-speech",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "authType": "",
+        "senderr": false,
+        "x": 1300,
+        "y": 1160,
+        "wires": [
+            [
+                "ec708b49f01040fc"
+            ]
+        ]
+    },
+    {
+        "id": "509f30ba4659c5da",
+        "type": "delay",
+        "z": "2a02f9ed25362929",
+        "name": "",
+        "pauseType": "random",
+        "timeout": "",
+        "timeoutUnits": "milliseconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "150",
+        "randomLast": "200",
+        "randomUnits": "milliseconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 1620,
+        "y": 1160,
+        "wires": [
+            [
+                "9951eb4b39431182"
+            ]
+        ]
+    },
+    {
+        "id": "9951eb4b39431182",
+        "type": "http request",
+        "z": "2a02f9ed25362929",
+        "name": "Text to speech",
+        "method": "POST",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "http://localhost:12101/api/text-to-speech",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "authType": "",
+        "senderr": false,
+        "x": 1780,
+        "y": 1160,
+        "wires": [
+            [
+                "8b0b59b2638bcc89"
+            ]
+        ]
+    },
+    {
+        "id": "b93294cd3aed9f18",
+        "type": "change",
+        "z": "2a02f9ed25362929",
+        "name": "ComeToPlayerPosition",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "Okay",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 960,
+        "y": 1940,
+        "wires": [
+            [
+                "8522cd988c161ebd"
+            ]
+        ]
+    },
+    {
+        "id": "8b0b59b2638bcc89",
+        "type": "change",
+        "z": "2a02f9ed25362929",
+        "name": "Instruction",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "If you have completed a task, the point next to it turns green automatically.",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1950,
+        "y": 1160,
+        "wires": [
+            [
+                "4b85461355b1d7ff"
+            ]
+        ]
+    },
+    {
+        "id": "4b85461355b1d7ff",
+        "type": "delay",
+        "z": "2a02f9ed25362929",
+        "name": "",
+        "pauseType": "random",
+        "timeout": "",
+        "timeoutUnits": "milliseconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "150",
+        "randomLast": "200",
+        "randomUnits": "milliseconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 2100,
+        "y": 1160,
+        "wires": [
+            [
+                "4837fd29b9132b3c"
+            ]
+        ]
+    },
+    {
+        "id": "4837fd29b9132b3c",
+        "type": "http request",
+        "z": "2a02f9ed25362929",
+        "name": "Text to speech",
+        "method": "POST",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "http://localhost:12101/api/text-to-speech",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "authType": "",
+        "senderr": false,
+        "x": 2260,
+        "y": 1160,
+        "wires": [
+            [
+                "1f5086398dcf9e38"
+            ]
+        ]
+    },
+    {
+        "id": "1f5086398dcf9e38",
+        "type": "change",
+        "z": "2a02f9ed25362929",
+        "name": "Instruction",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "In total, there are three types of tasks. For one of them, you have to find a definition of something, maybe by asking me. The other types are quite intuitive, some are about changing stuff in here and others are about making me do something. In all cases, what you are supposed to do is indicated very clearly. The session is over when you have fulfilled all the tasks.",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 2450,
+        "y": 1160,
+        "wires": [
+            [
+                "f9fc6fc75a743537"
+            ]
+        ]
+    },
+    {
+        "id": "f9fc6fc75a743537",
+        "type": "delay",
+        "z": "2a02f9ed25362929",
+        "name": "",
+        "pauseType": "random",
+        "timeout": "",
+        "timeoutUnits": "milliseconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "150",
+        "randomLast": "200",
+        "randomUnits": "milliseconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 2600,
+        "y": 1160,
+        "wires": [
+            [
+                "98423d14425f5f75"
+            ]
+        ]
+    },
+    {
+        "id": "98423d14425f5f75",
+        "type": "http request",
+        "z": "2a02f9ed25362929",
+        "name": "Text to speech",
+        "method": "POST",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "http://localhost:12101/api/text-to-speech",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "authType": "",
+        "senderr": false,
+        "x": 2760,
+        "y": 1160,
+        "wires": [
+            [
+                "24add57e409a7c98"
+            ]
+        ]
+    },
+    {
+        "id": "24add57e409a7c98",
+        "type": "change",
+        "z": "2a02f9ed25362929",
+        "name": "Instruction",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "Speaking of changing things in here, if you have got questions about where certain items are or where they belong, please refer back to me, I would be happy to help you out.",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 2450,
+        "y": 1220,
+        "wires": [
+            [
+                "06e1c7af38f98a0d"
+            ]
+        ]
+    },
+    {
+        "id": "06e1c7af38f98a0d",
+        "type": "delay",
+        "z": "2a02f9ed25362929",
+        "name": "",
+        "pauseType": "random",
+        "timeout": "",
+        "timeoutUnits": "milliseconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "150",
+        "randomLast": "200",
+        "randomUnits": "milliseconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 2600,
+        "y": 1220,
+        "wires": [
+            [
+                "4eed9079b115f4b1"
+            ]
+        ]
+    },
+    {
+        "id": "4eed9079b115f4b1",
+        "type": "http request",
+        "z": "2a02f9ed25362929",
+        "name": "Text to speech",
+        "method": "POST",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "http://localhost:12101/api/text-to-speech",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "authType": "",
+        "senderr": false,
+        "x": 2760,
+        "y": 1220,
+        "wires": [
+            [
+                "d79a84d0387439ba"
+            ]
+        ]
+    },
+    {
+        "id": "d79a84d0387439ba",
+        "type": "change",
+        "z": "2a02f9ed25362929",
+        "name": "Instruction",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "Before I forget to tell you, moving around here works via teleportation, so just point to a position with the right controller. The field you would end up in will be marked on the floor. You can try it out right away, try to teleport yourself somewhere over there!",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 2450,
+        "y": 1280,
+        "wires": [
+            [
+                "a17370b37191eacd"
+            ]
+        ]
+    },
+    {
+        "id": "c902d1260157a7f7",
+        "type": "http request",
+        "z": "2a02f9ed25362929",
+        "name": "Text to speech",
+        "method": "POST",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "http://localhost:12101/api/text-to-speech",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "authType": "",
+        "senderr": false,
+        "x": 2760,
+        "y": 1280,
+        "wires": [
+            [
+                "080537a44add1e27"
+            ]
+        ]
+    },
+    {
+        "id": "080537a44add1e27",
+        "type": "change",
+        "z": "2a02f9ed25362929",
+        "name": "Instruction",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "Now, interaction with items works similar to how you interact with things in real life. You might want to go over there and grab the book to put it  from the couch onto the table.",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 2450,
+        "y": 1340,
+        "wires": [
+            [
+                "55181ff3c9b46f45"
+            ]
+        ]
+    },
+    {
+        "id": "d5f728614b3de11a",
+        "type": "http request",
+        "z": "2a02f9ed25362929",
+        "name": "Text to speech",
+        "method": "POST",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "http://localhost:12101/api/text-to-speech",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "authType": "",
+        "senderr": false,
+        "x": 2760,
+        "y": 1340,
+        "wires": [
+            [
+                "822b29a2b451ab8b"
+            ]
+        ]
+    },
+    {
+        "id": "822b29a2b451ab8b",
+        "type": "change",
+        "z": "2a02f9ed25362929",
+        "name": "Instruction",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "Please be careful that you address me with the words Hey I-Lo, if you want me to listen.",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 2450,
+        "y": 1400,
+        "wires": [
+            [
+                "7dd4c1112ee169f1"
+            ]
+        ]
+    },
+    {
+        "id": "7dd4c1112ee169f1",
+        "type": "delay",
+        "z": "2a02f9ed25362929",
+        "name": "",
+        "pauseType": "random",
+        "timeout": "",
+        "timeoutUnits": "milliseconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "150",
+        "randomLast": "200",
+        "randomUnits": "milliseconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 2600,
+        "y": 1400,
+        "wires": [
+            [
+                "136146013e557e67"
+            ]
+        ]
+    },
+    {
+        "id": "136146013e557e67",
+        "type": "http request",
+        "z": "2a02f9ed25362929",
+        "name": "Text to speech",
+        "method": "POST",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "http://localhost:12101/api/text-to-speech",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "authType": "",
+        "senderr": false,
+        "x": 2760,
+        "y": 1400,
+        "wires": [
+            [
+                "b479bd77a2869d97"
+            ]
+        ]
+    },
+    {
+        "id": "b479bd77a2869d97",
+        "type": "change",
+        "z": "2a02f9ed25362929",
+        "name": "Instruction",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "This way, I know that you want to speak to me. During the whole time you spend in this lovely home, you can always call me over. If you do not want me around, I can also go to my docking station that is in the bedroom if you tell me to.",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 2450,
+        "y": 1460,
+        "wires": [
+            [
+                "fd04b8b52a4d59ee"
+            ]
+        ]
+    },
+    {
+        "id": "fd04b8b52a4d59ee",
+        "type": "delay",
+        "z": "2a02f9ed25362929",
+        "name": "",
+        "pauseType": "random",
+        "timeout": "",
+        "timeoutUnits": "milliseconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "150",
+        "randomLast": "200",
+        "randomUnits": "milliseconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 2600,
+        "y": 1460,
+        "wires": [
+            [
+                "8441a96bb051080e"
+            ]
+        ]
+    },
+    {
+        "id": "8441a96bb051080e",
+        "type": "http request",
+        "z": "2a02f9ed25362929",
+        "name": "Text to speech",
+        "method": "POST",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "http://localhost:12101/api/text-to-speech",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "authType": "",
+        "senderr": false,
+        "x": 2760,
+        "y": 1460,
+        "wires": [
+            [
+                "9c615ec3caf0aaca"
+            ]
+        ]
+    },
+    {
+        "id": "9c615ec3caf0aaca",
+        "type": "change",
+        "z": "2a02f9ed25362929",
+        "name": "Instruction",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "So in case you want me to go away, just ask me to go to the docking station, if you want me to come around, just call me over. Now, you are all set to get started! If you need help, just refer back to me, I am always happy to help you out. Have fun!",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 2450,
+        "y": 1520,
+        "wires": [
+            [
+                "fc8d3714cf7f12cb"
+            ]
+        ]
+    },
+    {
+        "id": "fc8d3714cf7f12cb",
+        "type": "delay",
+        "z": "2a02f9ed25362929",
+        "name": "",
+        "pauseType": "random",
+        "timeout": "",
+        "timeoutUnits": "milliseconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "150",
+        "randomLast": "200",
+        "randomUnits": "milliseconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 2600,
+        "y": 1520,
+        "wires": [
+            [
+                "4eaf00984b81b584"
+            ]
+        ]
+    },
+    {
+        "id": "4eaf00984b81b584",
+        "type": "http request",
+        "z": "2a02f9ed25362929",
+        "name": "Text to speech",
+        "method": "POST",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "http://localhost:12101/api/text-to-speech",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "authType": "",
+        "senderr": false,
+        "x": 2760,
+        "y": 1520,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "55181ff3c9b46f45",
+        "type": "delay",
+        "z": "2a02f9ed25362929",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "5",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "150",
+        "randomLast": "200",
+        "randomUnits": "milliseconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 2600,
+        "y": 1340,
+        "wires": [
+            [
+                "d5f728614b3de11a"
+            ]
+        ]
+    },
+    {
+        "id": "a17370b37191eacd",
+        "type": "delay",
+        "z": "2a02f9ed25362929",
+        "name": "",
+        "pauseType": "random",
+        "timeout": "",
+        "timeoutUnits": "milliseconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "150",
+        "randomLast": "200",
+        "randomUnits": "milliseconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 2600,
+        "y": 1280,
+        "wires": [
+            [
+                "c902d1260157a7f7"
+            ]
+        ]
+    },
+    {
+        "id": "06233a665fdf5047",
+        "type": "delay",
+        "z": "2a02f9ed25362929",
+        "name": "",
+        "pauseType": "random",
+        "timeout": "",
+        "timeoutUnits": "milliseconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "150",
+        "randomLast": "200",
+        "randomUnits": "milliseconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 1080,
+        "y": 620,
+        "wires": [
+            [
+                "da9fa3d680d83d8d"
+            ]
+        ]
+    },
+    {
+        "id": "da9fa3d680d83d8d",
+        "type": "http request",
+        "z": "2a02f9ed25362929",
+        "name": "Text to speech",
+        "method": "POST",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "http://localhost:12101/api/text-to-speech",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "authType": "",
+        "senderr": false,
+        "x": 1240,
+        "y": 620,
+        "wires": [
+            [
+                "464824fc46cf9f20"
+            ]
+        ]
+    },
+    {
+        "id": "943b827454a921d3",
+        "type": "change",
+        "z": "2a02f9ed25362929",
+        "name": "Instruction",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "I am the Speech assistant of this place and today, your task is to help a little bit in here. The tasks you have to complete are noted on the pinboard on the fridge, so you can always refer back to it and remind yourself of what is left to do.",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1410,
+        "y": 80,
+        "wires": [
+            [
+                "f09528c809481631"
+            ]
+        ]
+    },
+    {
+        "id": "a1bbfad39294496c",
+        "type": "delay",
+        "z": "2a02f9ed25362929",
+        "name": "",
+        "pauseType": "random",
+        "timeout": "",
+        "timeoutUnits": "milliseconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "150",
+        "randomLast": "200",
+        "randomUnits": "milliseconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 1080,
+        "y": 80,
+        "wires": [
+            [
+                "1ea765f79f11009f"
+            ]
+        ]
+    },
+    {
+        "id": "1ea765f79f11009f",
+        "type": "http request",
+        "z": "2a02f9ed25362929",
+        "name": "Text to speech",
+        "method": "POST",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "http://localhost:12101/api/text-to-speech",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "authType": "",
+        "senderr": false,
+        "x": 1240,
+        "y": 80,
+        "wires": [
+            [
+                "943b827454a921d3"
+            ]
+        ]
+    },
+    {
+        "id": "f09528c809481631",
+        "type": "delay",
+        "z": "2a02f9ed25362929",
+        "name": "",
+        "pauseType": "random",
+        "timeout": "",
+        "timeoutUnits": "milliseconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "150",
+        "randomLast": "200",
+        "randomUnits": "milliseconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 1560,
+        "y": 80,
+        "wires": [
+            [
+                "395f926ef129c9d2"
+            ]
+        ]
+    },
+    {
+        "id": "395f926ef129c9d2",
+        "type": "http request",
+        "z": "2a02f9ed25362929",
+        "name": "Text to speech",
+        "method": "POST",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "http://localhost:12101/api/text-to-speech",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "authType": "",
+        "senderr": false,
+        "x": 1720,
+        "y": 80,
+        "wires": [
+            [
+                "6190bb79223bc177"
+            ]
+        ]
+    },
+    {
+        "id": "6190bb79223bc177",
+        "type": "change",
+        "z": "2a02f9ed25362929",
+        "name": "Instruction",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "If you have completed a task, the point next to it turns green automatically.",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1890,
+        "y": 80,
+        "wires": [
+            [
+                "45dfc271e07f501c"
+            ]
+        ]
+    },
+    {
+        "id": "45dfc271e07f501c",
+        "type": "delay",
+        "z": "2a02f9ed25362929",
+        "name": "",
+        "pauseType": "random",
+        "timeout": "",
+        "timeoutUnits": "milliseconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "150",
+        "randomLast": "200",
+        "randomUnits": "milliseconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 2040,
+        "y": 80,
+        "wires": [
+            [
+                "585e288f220d8396"
+            ]
+        ]
+    },
+    {
+        "id": "585e288f220d8396",
+        "type": "http request",
+        "z": "2a02f9ed25362929",
+        "name": "Text to speech",
+        "method": "POST",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "http://localhost:12101/api/text-to-speech",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "authType": "",
+        "senderr": false,
+        "x": 2200,
+        "y": 80,
+        "wires": [
+            [
+                "ca7326629a751625"
+            ]
+        ]
+    },
+    {
+        "id": "ca7326629a751625",
+        "type": "change",
+        "z": "2a02f9ed25362929",
+        "name": "Instruction",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "In total, there are three types of tasks. For one of them, you have to find a definition of something, maybe by asking me. The other types are quite intuitive, some are about changing stuff in here and others are about making me do something. In all cases, what you are supposed to do is indicated very clearly. The session is over when you have fulfilled all the tasks.",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1890,
+        "y": 140,
+        "wires": [
+            [
+                "6be36254b00daeac"
+            ]
+        ]
+    },
+    {
+        "id": "6be36254b00daeac",
+        "type": "delay",
+        "z": "2a02f9ed25362929",
+        "name": "",
+        "pauseType": "random",
+        "timeout": "",
+        "timeoutUnits": "milliseconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "150",
+        "randomLast": "200",
+        "randomUnits": "milliseconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 2040,
+        "y": 140,
+        "wires": [
+            [
+                "9f4b1b96af4dd63e"
+            ]
+        ]
+    },
+    {
+        "id": "9f4b1b96af4dd63e",
+        "type": "http request",
+        "z": "2a02f9ed25362929",
+        "name": "Text to speech",
+        "method": "POST",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "http://localhost:12101/api/text-to-speech",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "authType": "",
+        "senderr": false,
+        "x": 2200,
+        "y": 140,
+        "wires": [
+            [
+                "c8c41de4f96b9e53"
+            ]
+        ]
+    },
+    {
+        "id": "c8c41de4f96b9e53",
+        "type": "change",
+        "z": "2a02f9ed25362929",
+        "name": "Instruction",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "Speaking of changing things in here, if you have got questions about where certain items are or where they belong, please refer back to me, I would be happy to help you out.",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1890,
+        "y": 200,
+        "wires": [
+            [
+                "96741720863da484"
+            ]
+        ]
+    },
+    {
+        "id": "96741720863da484",
+        "type": "delay",
+        "z": "2a02f9ed25362929",
+        "name": "",
+        "pauseType": "random",
+        "timeout": "",
+        "timeoutUnits": "milliseconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "150",
+        "randomLast": "200",
+        "randomUnits": "milliseconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 2040,
+        "y": 200,
+        "wires": [
+            [
+                "fa39c3372a526112"
+            ]
+        ]
+    },
+    {
+        "id": "fa39c3372a526112",
+        "type": "http request",
+        "z": "2a02f9ed25362929",
+        "name": "Text to speech",
+        "method": "POST",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "http://localhost:12101/api/text-to-speech",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "authType": "",
+        "senderr": false,
+        "x": 2200,
+        "y": 200,
+        "wires": [
+            [
+                "368957656a282f0e"
+            ]
+        ]
+    },
+    {
+        "id": "97ae05b8ace16521",
+        "type": "http request",
+        "z": "2a02f9ed25362929",
+        "name": "Text to speech",
+        "method": "POST",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "http://localhost:12101/api/text-to-speech",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "authType": "",
+        "senderr": false,
+        "x": 2200,
+        "y": 260,
+        "wires": [
+            [
+                "c69843ec0a36490b"
+            ]
+        ]
+    },
+    {
+        "id": "62783f35e7e9a58c",
+        "type": "http request",
+        "z": "2a02f9ed25362929",
+        "name": "Text to speech",
+        "method": "POST",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "http://localhost:12101/api/text-to-speech",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "authType": "",
+        "senderr": false,
+        "x": 2200,
+        "y": 320,
+        "wires": [
+            [
+                "b4aa89a3d2a3365d"
+            ]
+        ]
+    },
+    {
+        "id": "cf13f83fe0e43dd4",
+        "type": "http request",
+        "z": "2a02f9ed25362929",
+        "name": "Text to speech",
+        "method": "POST",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "http://localhost:12101/api/text-to-speech",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "authType": "",
+        "senderr": false,
+        "x": 2200,
+        "y": 380,
+        "wires": [
+            [
+                "0d68032ecbf26ec0"
+            ]
+        ]
+    },
+    {
+        "id": "7343964135eeabee",
+        "type": "http request",
+        "z": "2a02f9ed25362929",
+        "name": "Text to speech",
+        "method": "POST",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "http://localhost:12101/api/text-to-speech",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "authType": "",
+        "senderr": false,
+        "x": 2200,
+        "y": 440,
+        "wires": [
+            [
+                "2a993ee7552e67a2"
+            ]
+        ]
+    },
+    {
+        "id": "ee71491171cd3791",
+        "type": "delay",
+        "z": "2a02f9ed25362929",
+        "name": "",
+        "pauseType": "random",
+        "timeout": "",
+        "timeoutUnits": "milliseconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "150",
+        "randomLast": "200",
+        "randomUnits": "milliseconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 2040,
+        "y": 500,
+        "wires": [
+            [
+                "4091df5001be1da6"
+            ]
+        ]
+    },
+    {
+        "id": "4091df5001be1da6",
+        "type": "http request",
+        "z": "2a02f9ed25362929",
+        "name": "Text to speech",
+        "method": "POST",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "http://localhost:12101/api/text-to-speech",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "authType": "",
+        "senderr": false,
+        "x": 2200,
+        "y": 500,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "2ffabe172a100f05",
+        "type": "delay",
+        "z": "2a02f9ed25362929",
+        "name": "",
+        "pauseType": "random",
+        "timeout": "",
+        "timeoutUnits": "milliseconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "150",
+        "randomLast": "200",
+        "randomUnits": "milliseconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 2040,
+        "y": 260,
+        "wires": [
+            [
+                "97ae05b8ace16521"
+            ]
+        ]
+    },
+    {
+        "id": "368957656a282f0e",
+        "type": "change",
+        "z": "2a02f9ed25362929",
+        "name": "Instruction",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "Before I forget to tell you, moving around here works via teleportation, so just point to a position with the right controller. The field you would end up in will be marked on the floor. You can try it out right away, try to teleport yourself to the bathroom door!",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1890,
+        "y": 260,
+        "wires": [
+            [
+                "2ffabe172a100f05"
+            ]
+        ]
+    },
+    {
+        "id": "f2503353cdfbdf8a",
+        "type": "delay",
+        "z": "2a02f9ed25362929",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "5",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "150",
+        "randomLast": "200",
+        "randomUnits": "milliseconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 2040,
+        "y": 320,
+        "wires": [
+            [
+                "62783f35e7e9a58c"
+            ]
+        ]
+    },
+    {
+        "id": "bc6db50e73f0b633",
+        "type": "delay",
+        "z": "2a02f9ed25362929",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "5",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "150",
+        "randomLast": "200",
+        "randomUnits": "milliseconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 2040,
+        "y": 380,
+        "wires": [
+            [
+                "cf13f83fe0e43dd4"
+            ]
+        ]
+    },
+    {
+        "id": "464824fc46cf9f20",
+        "type": "change",
+        "z": "2a02f9ed25362929",
+        "name": "Instruction",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "I am the robot of this place and today, your task is to help a little bit in here. The tasks you have to complete are noted on the pinboard on the fridge, so you can always refer back to it and remind yourself of what is left to do.",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1410,
+        "y": 620,
+        "wires": [
+            [
+                "39471799784628df"
+            ]
+        ]
+    },
+    {
+        "id": "39471799784628df",
+        "type": "delay",
+        "z": "2a02f9ed25362929",
+        "name": "",
+        "pauseType": "random",
+        "timeout": "",
+        "timeoutUnits": "milliseconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "150",
+        "randomLast": "200",
+        "randomUnits": "milliseconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 1560,
+        "y": 620,
+        "wires": [
+            [
+                "98457c1ab2db217e"
+            ]
+        ]
+    },
+    {
+        "id": "98457c1ab2db217e",
+        "type": "http request",
+        "z": "2a02f9ed25362929",
+        "name": "Text to speech",
+        "method": "POST",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "http://localhost:12101/api/text-to-speech",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "authType": "",
+        "senderr": false,
+        "x": 1720,
+        "y": 620,
+        "wires": [
+            [
+                "2bb705865db9ecb0"
+            ]
+        ]
+    },
+    {
+        "id": "2bb705865db9ecb0",
+        "type": "change",
+        "z": "2a02f9ed25362929",
+        "name": "Instruction",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "If you have completed a task, the point next to it turns green automatically.",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1890,
+        "y": 620,
+        "wires": [
+            [
+                "77d4c1a112633df7"
+            ]
+        ]
+    },
+    {
+        "id": "77d4c1a112633df7",
+        "type": "delay",
+        "z": "2a02f9ed25362929",
+        "name": "",
+        "pauseType": "random",
+        "timeout": "",
+        "timeoutUnits": "milliseconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "150",
+        "randomLast": "200",
+        "randomUnits": "milliseconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 2040,
+        "y": 620,
+        "wires": [
+            [
+                "a89ddb397f3703af"
+            ]
+        ]
+    },
+    {
+        "id": "a89ddb397f3703af",
+        "type": "http request",
+        "z": "2a02f9ed25362929",
+        "name": "Text to speech",
+        "method": "POST",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "http://localhost:12101/api/text-to-speech",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "authType": "",
+        "senderr": false,
+        "x": 2200,
+        "y": 620,
+        "wires": [
+            [
+                "4740bd9a2c73daa2"
+            ]
+        ]
+    },
+    {
+        "id": "4740bd9a2c73daa2",
+        "type": "change",
+        "z": "2a02f9ed25362929",
+        "name": "Instruction",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "In total, there are three types of tasks. For one of them, you have to find a definition of something, maybe by asking me. The other types are quite intuitive, some are about changing stuff in here and others are about making me do something. In all cases, what you are supposed to do is indicated very clearly. The session is over when you have fulfilled all the tasks.",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 2450,
+        "y": 620,
+        "wires": [
+            [
+                "d9caba4d81c2130e"
+            ]
+        ]
+    },
+    {
+        "id": "d9caba4d81c2130e",
+        "type": "delay",
+        "z": "2a02f9ed25362929",
+        "name": "",
+        "pauseType": "random",
+        "timeout": "",
+        "timeoutUnits": "milliseconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "150",
+        "randomLast": "200",
+        "randomUnits": "milliseconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 2600,
+        "y": 620,
+        "wires": [
+            [
+                "a9ff26417616da12"
+            ]
+        ]
+    },
+    {
+        "id": "a9ff26417616da12",
+        "type": "http request",
+        "z": "2a02f9ed25362929",
+        "name": "Text to speech",
+        "method": "POST",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "http://localhost:12101/api/text-to-speech",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "authType": "",
+        "senderr": false,
+        "x": 2760,
+        "y": 620,
+        "wires": [
+            [
+                "2ead6bbe9bce9baa"
+            ]
+        ]
+    },
+    {
+        "id": "2ead6bbe9bce9baa",
+        "type": "change",
+        "z": "2a02f9ed25362929",
+        "name": "Instruction",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "Speaking of changing things in here, if you have got questions about where certain items are or where they belong, please refer back to me, I would be happy to help you out.",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 2450,
+        "y": 560,
+        "wires": [
+            [
+                "4a2beab9d092ec29"
+            ]
+        ]
+    },
+    {
+        "id": "4a2beab9d092ec29",
+        "type": "delay",
+        "z": "2a02f9ed25362929",
+        "name": "",
+        "pauseType": "random",
+        "timeout": "",
+        "timeoutUnits": "milliseconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "150",
+        "randomLast": "200",
+        "randomUnits": "milliseconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 2600,
+        "y": 560,
+        "wires": [
+            [
+                "08f2d3df24eb40da"
+            ]
+        ]
+    },
+    {
+        "id": "08f2d3df24eb40da",
+        "type": "http request",
+        "z": "2a02f9ed25362929",
+        "name": "Text to speech",
+        "method": "POST",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "http://localhost:12101/api/text-to-speech",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "authType": "",
+        "senderr": false,
+        "x": 2760,
+        "y": 560,
+        "wires": [
+            [
+                "c3d21a7583c5cc1a"
+            ]
+        ]
+    },
+    {
+        "id": "ace946257e474950",
+        "type": "http request",
+        "z": "2a02f9ed25362929",
+        "name": "Text to speech",
+        "method": "POST",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "http://localhost:12101/api/text-to-speech",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "authType": "",
+        "senderr": false,
+        "x": 2760,
+        "y": 500,
+        "wires": [
+            [
+                "7cdc1585cb1a32a1"
+            ]
+        ]
+    },
+    {
+        "id": "50df862c31d108e6",
+        "type": "delay",
+        "z": "2a02f9ed25362929",
+        "name": "",
+        "pauseType": "random",
+        "timeout": "",
+        "timeoutUnits": "milliseconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "150",
+        "randomLast": "200",
+        "randomUnits": "milliseconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 2600,
+        "y": 500,
+        "wires": [
+            [
+                "ace946257e474950"
+            ]
+        ]
+    },
+    {
+        "id": "c3d21a7583c5cc1a",
+        "type": "change",
+        "z": "2a02f9ed25362929",
+        "name": "Instruction",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "Before I forget to tell you, moving around here works via teleportation, so just point to a position with the right controller. The field you would end up in will be marked on the floor. You can try it out right away, try to teleport yourself to the bathroom door!",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 2450,
+        "y": 500,
+        "wires": [
+            [
+                "50df862c31d108e6"
+            ]
+        ]
+    },
+    {
+        "id": "ec66d6bc7285494e",
+        "type": "delay",
+        "z": "2a02f9ed25362929",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "5",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "150",
+        "randomLast": "200",
+        "randomUnits": "milliseconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 2600,
+        "y": 440,
+        "wires": [
+            [
+                "18c8154e7411bc7a"
+            ]
+        ]
+    },
+    {
+        "id": "18c8154e7411bc7a",
+        "type": "http request",
+        "z": "2a02f9ed25362929",
+        "name": "Text to speech",
+        "method": "POST",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "http://localhost:12101/api/text-to-speech",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "authType": "",
+        "senderr": false,
+        "x": 2760,
+        "y": 440,
+        "wires": [
+            [
+                "8d34db90c97c123b"
+            ]
+        ]
+    },
+    {
+        "id": "c4efe1758b9c5002",
+        "type": "http request",
+        "z": "2a02f9ed25362929",
+        "name": "Text to speech",
+        "method": "POST",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "http://localhost:12101/api/text-to-speech",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "authType": "",
+        "senderr": false,
+        "x": 2760,
+        "y": 380,
+        "wires": [
+            [
+                "6fcd0f475b5950b9"
+            ]
+        ]
+    },
+    {
+        "id": "7cdc1585cb1a32a1",
+        "type": "change",
+        "z": "2a02f9ed25362929",
+        "name": "Instruction",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "Now, interaction with items works similar to how you interact with things in real life. You might want to go to the sofa and grab the book to put it  from the couch onto the table.",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 2450,
+        "y": 440,
+        "wires": [
+            [
+                "ec66d6bc7285494e"
+            ]
+        ]
+    },
+    {
+        "id": "dec88d8cbb57a81a",
+        "type": "http request",
+        "z": "2a02f9ed25362929",
+        "name": "Text to speech",
+        "method": "POST",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "http://localhost:12101/api/text-to-speech",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "authType": "",
+        "senderr": false,
+        "x": 2760,
+        "y": 320,
+        "wires": [
+            [
+                "d3d22234313d9450"
+            ]
+        ]
+    },
+    {
+        "id": "2d4c9fe9c2832d75",
+        "type": "delay",
+        "z": "2a02f9ed25362929",
+        "name": "",
+        "pauseType": "random",
+        "timeout": "",
+        "timeoutUnits": "milliseconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "150",
+        "randomLast": "200",
+        "randomUnits": "milliseconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 2600,
+        "y": 260,
+        "wires": [
+            [
+                "4c6b237dd023a07d"
+            ]
+        ]
+    },
+    {
+        "id": "4c6b237dd023a07d",
+        "type": "http request",
+        "z": "2a02f9ed25362929",
+        "name": "Text to speech",
+        "method": "POST",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "http://localhost:12101/api/text-to-speech",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "authType": "",
+        "senderr": false,
+        "x": 2760,
+        "y": 260,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "8d34db90c97c123b",
+        "type": "change",
+        "z": "2a02f9ed25362929",
+        "name": "Instruction",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "Please be careful that you address me with the words Hey I-Lo, if you want me to listen.",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 2450,
+        "y": 380,
+        "wires": [
+            [
+                "6d26ac4a8d359c34"
+            ]
+        ]
+    },
+    {
+        "id": "6fcd0f475b5950b9",
+        "type": "change",
+        "z": "2a02f9ed25362929",
+        "name": "Instruction",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "This way, I know that you want to speak to me. During the whole time you spend in this lovely home, you can always call me over. If you do not want me around, I can also go to my docking station that is in the bedroom if you tell me to.",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 2450,
+        "y": 320,
+        "wires": [
+            [
+                "8bcce95749effb6d"
+            ]
+        ]
+    },
+    {
+        "id": "d3d22234313d9450",
+        "type": "change",
+        "z": "2a02f9ed25362929",
+        "name": "Instruction",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "So in case you want me to go away, just ask me to go to the docking station, if you want me to come around, just call me over. Now, you are all set to get started! If you need help, just refer back to me, I am always happy to help you out. Have fun!",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 2450,
+        "y": 260,
+        "wires": [
+            [
+                "2d4c9fe9c2832d75"
+            ]
+        ]
+    },
+    {
+        "id": "c69843ec0a36490b",
+        "type": "change",
+        "z": "2a02f9ed25362929",
+        "name": "Instruction",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "Now, interaction with items works similar to how you interact with things in real life. You might want to go to the sofa and grab the book to put it  from the couch onto the table.",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1890,
+        "y": 320,
+        "wires": [
+            [
+                "f2503353cdfbdf8a"
+            ]
+        ]
+    },
+    {
+        "id": "b4aa89a3d2a3365d",
+        "type": "change",
+        "z": "2a02f9ed25362929",
+        "name": "Instruction",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "Please be careful that you address me with the words Hey I-Lo, if you want me to listen.",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1890,
+        "y": 380,
+        "wires": [
+            [
+                "bc6db50e73f0b633"
+            ]
+        ]
+    },
+    {
+        "id": "0d68032ecbf26ec0",
+        "type": "change",
+        "z": "2a02f9ed25362929",
+        "name": "Instruction",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "This way, I know that you want to speak to me.",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1890,
+        "y": 440,
+        "wires": [
+            [
+                "48ac9d2648a09910"
+            ]
+        ]
+    },
+    {
+        "id": "2a993ee7552e67a2",
+        "type": "change",
+        "z": "2a02f9ed25362929",
+        "name": "Instruction",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "Now, you are all set to get started! If you need help, just refer back to me, I am always happy to help you out. Have fun!",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1890,
+        "y": 500,
+        "wires": [
+            [
+                "ee71491171cd3791"
+            ]
+        ]
+    },
+    {
+        "id": "8bcce95749effb6d",
+        "type": "delay",
+        "z": "2a02f9ed25362929",
+        "name": "",
+        "pauseType": "random",
+        "timeout": "",
+        "timeoutUnits": "milliseconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "150",
+        "randomLast": "200",
+        "randomUnits": "milliseconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 2600,
+        "y": 320,
+        "wires": [
+            [
+                "dec88d8cbb57a81a"
+            ]
+        ]
+    },
+    {
+        "id": "6d26ac4a8d359c34",
+        "type": "delay",
+        "z": "2a02f9ed25362929",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "5",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "150",
+        "randomLast": "200",
+        "randomUnits": "milliseconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 2600,
+        "y": 380,
+        "wires": [
+            [
+                "c4efe1758b9c5002"
+            ]
+        ]
+    },
+    {
+        "id": "48ac9d2648a09910",
+        "type": "delay",
+        "z": "2a02f9ed25362929",
+        "name": "",
+        "pauseType": "random",
+        "timeout": "",
+        "timeoutUnits": "milliseconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "150",
+        "randomLast": "200",
+        "randomUnits": "milliseconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 2040,
+        "y": 440,
+        "wires": [
+            [
+                "7343964135eeabee"
+            ]
+        ]
+    },
+    {
+        "id": "4c554782c24331ec",
+        "type": "change",
+        "z": "2a02f9ed25362929",
+        "name": "Instruction",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "Hi, my name is I-Lo, nice to meet you! ",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 930,
+        "y": 700,
+        "wires": [
+            [
+                "a6b9a7daa2d17489"
+            ]
+        ]
+    },
+    {
+        "id": "a6b9a7daa2d17489",
+        "type": "delay",
+        "z": "2a02f9ed25362929",
+        "name": "",
+        "pauseType": "random",
+        "timeout": "",
+        "timeoutUnits": "milliseconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "150",
+        "randomLast": "200",
+        "randomUnits": "milliseconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 1140,
+        "y": 700,
+        "wires": [
+            [
+                "6cefbe25844a435e"
+            ]
+        ]
+    },
+    {
+        "id": "6cefbe25844a435e",
+        "type": "http request",
+        "z": "2a02f9ed25362929",
+        "name": "Text to speech",
+        "method": "POST",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "http://localhost:12101/api/text-to-speech",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "authType": "",
+        "senderr": false,
+        "x": 1300,
+        "y": 700,
+        "wires": [
+            [
+                "273df122534aeb5d"
+            ]
+        ]
+    },
+    {
+        "id": "273df122534aeb5d",
+        "type": "change",
+        "z": "2a02f9ed25362929",
+        "name": "Instruction",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "I am the robot of this place and today, your task is to help a little bit in here. The tasks you have to complete are noted on the pinboard on the fridge, so you can always refer back to it and remind yourself of what is left to do.",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1470,
+        "y": 700,
+        "wires": [
+            [
+                "f3af4514fc57b887"
+            ]
+        ]
+    },
+    {
+        "id": "f3af4514fc57b887",
+        "type": "delay",
+        "z": "2a02f9ed25362929",
+        "name": "",
+        "pauseType": "random",
+        "timeout": "",
+        "timeoutUnits": "milliseconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "150",
+        "randomLast": "200",
+        "randomUnits": "milliseconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 1620,
+        "y": 700,
+        "wires": [
+            [
+                "60bba312dd425708"
+            ]
+        ]
+    },
+    {
+        "id": "60bba312dd425708",
+        "type": "http request",
+        "z": "2a02f9ed25362929",
+        "name": "Text to speech",
+        "method": "POST",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "http://localhost:12101/api/text-to-speech",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "authType": "",
+        "senderr": false,
+        "x": 1780,
+        "y": 700,
+        "wires": [
+            [
+                "118086d14dc1f5f2"
+            ]
+        ]
+    },
+    {
+        "id": "118086d14dc1f5f2",
+        "type": "change",
+        "z": "2a02f9ed25362929",
+        "name": "Instruction",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "If you have completed a task, the point next to it turns green automatically.",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1950,
+        "y": 700,
+        "wires": [
+            [
+                "475f8f160609585c"
+            ]
+        ]
+    },
+    {
+        "id": "475f8f160609585c",
+        "type": "delay",
+        "z": "2a02f9ed25362929",
+        "name": "",
+        "pauseType": "random",
+        "timeout": "",
+        "timeoutUnits": "milliseconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "150",
+        "randomLast": "200",
+        "randomUnits": "milliseconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 2100,
+        "y": 700,
+        "wires": [
+            [
+                "99547e36151a80ad"
+            ]
+        ]
+    },
+    {
+        "id": "99547e36151a80ad",
+        "type": "http request",
+        "z": "2a02f9ed25362929",
+        "name": "Text to speech",
+        "method": "POST",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "http://localhost:12101/api/text-to-speech",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "authType": "",
+        "senderr": false,
+        "x": 2260,
+        "y": 700,
+        "wires": [
+            [
+                "3e32a020693d0f1f"
+            ]
+        ]
+    },
+    {
+        "id": "3e32a020693d0f1f",
+        "type": "change",
+        "z": "2a02f9ed25362929",
+        "name": "Instruction",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "In total, there are three types of tasks. For one of them, you have to find a definition of something, maybe by asking me. The other types are quite intuitive, some are about changing stuff in here and others are about making me do something. In all cases, what you are supposed to do is indicated very clearly. The session is over when you have fulfilled all the tasks.",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 2450,
+        "y": 700,
+        "wires": [
+            [
+                "f543ef9a772f7c06"
+            ]
+        ]
+    },
+    {
+        "id": "f543ef9a772f7c06",
+        "type": "delay",
+        "z": "2a02f9ed25362929",
+        "name": "",
+        "pauseType": "random",
+        "timeout": "",
+        "timeoutUnits": "milliseconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "150",
+        "randomLast": "200",
+        "randomUnits": "milliseconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 2600,
+        "y": 700,
+        "wires": [
+            [
+                "a4e962851feaef55"
+            ]
+        ]
+    },
+    {
+        "id": "a4e962851feaef55",
+        "type": "http request",
+        "z": "2a02f9ed25362929",
+        "name": "Text to speech",
+        "method": "POST",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "http://localhost:12101/api/text-to-speech",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "authType": "",
+        "senderr": false,
+        "x": 2760,
+        "y": 700,
+        "wires": [
+            [
+                "8991660ece4d18b4"
+            ]
+        ]
+    },
+    {
+        "id": "8991660ece4d18b4",
+        "type": "change",
+        "z": "2a02f9ed25362929",
+        "name": "Instruction",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "Speaking of changing things in here, if you have got questions about where certain items are or where they belong, please refer back to me, I would be happy to help you out.",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 2450,
+        "y": 760,
+        "wires": [
+            [
+                "2925c4941ace53d7"
+            ]
+        ]
+    },
+    {
+        "id": "2925c4941ace53d7",
+        "type": "delay",
+        "z": "2a02f9ed25362929",
+        "name": "",
+        "pauseType": "random",
+        "timeout": "",
+        "timeoutUnits": "milliseconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "150",
+        "randomLast": "200",
+        "randomUnits": "milliseconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 2600,
+        "y": 760,
+        "wires": [
+            [
+                "c07da687f2d4f802"
+            ]
+        ]
+    },
+    {
+        "id": "c07da687f2d4f802",
+        "type": "http request",
+        "z": "2a02f9ed25362929",
+        "name": "Text to speech",
+        "method": "POST",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "http://localhost:12101/api/text-to-speech",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "authType": "",
+        "senderr": false,
+        "x": 2760,
+        "y": 760,
+        "wires": [
+            [
+                "b1ddc709f736a88b"
+            ]
+        ]
+    },
+    {
+        "id": "83844e4a9d974dfe",
+        "type": "http request",
+        "z": "2a02f9ed25362929",
+        "name": "Text to speech",
+        "method": "POST",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "http://localhost:12101/api/text-to-speech",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "authType": "",
+        "senderr": false,
+        "x": 2760,
+        "y": 820,
+        "wires": [
+            [
+                "0d420c4510f6ac8f"
+            ]
+        ]
+    },
+    {
+        "id": "10da1978b373e6a6",
+        "type": "delay",
+        "z": "2a02f9ed25362929",
+        "name": "",
+        "pauseType": "random",
+        "timeout": "",
+        "timeoutUnits": "milliseconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "150",
+        "randomLast": "200",
+        "randomUnits": "milliseconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 2600,
+        "y": 820,
+        "wires": [
+            [
+                "83844e4a9d974dfe"
+            ]
+        ]
+    },
+    {
+        "id": "b1ddc709f736a88b",
+        "type": "change",
+        "z": "2a02f9ed25362929",
+        "name": "Instruction",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "Before I forget to tell you, moving around here works via teleportation, so just point to a position with the right controller. The field you would end up in will be marked on the floor. You can try it out right away, try to teleport yourself to the bathroom door!",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 2450,
+        "y": 820,
+        "wires": [
+            [
+                "10da1978b373e6a6"
+            ]
+        ]
+    },
+    {
+        "id": "8031adfe44e78843",
+        "type": "delay",
+        "z": "2a02f9ed25362929",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "5",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "150",
+        "randomLast": "200",
+        "randomUnits": "milliseconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 2600,
+        "y": 880,
+        "wires": [
+            [
+                "3ebe66c8488d0190"
+            ]
+        ]
+    },
+    {
+        "id": "3ebe66c8488d0190",
+        "type": "http request",
+        "z": "2a02f9ed25362929",
+        "name": "Text to speech",
+        "method": "POST",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "http://localhost:12101/api/text-to-speech",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "authType": "",
+        "senderr": false,
+        "x": 2760,
+        "y": 880,
+        "wires": [
+            [
+                "dc725df526048b65"
+            ]
+        ]
+    },
+    {
+        "id": "0d420c4510f6ac8f",
+        "type": "change",
+        "z": "2a02f9ed25362929",
+        "name": "Instruction",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "Now, interaction with items works similar to how you interact with things in real life. You might want to go to the sofa and grab the book to put it  from the couch onto the table.",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 2450,
+        "y": 880,
+        "wires": [
+            [
+                "8031adfe44e78843"
+            ]
+        ]
+    },
+    {
+        "id": "afefc1069fdc5536",
+        "type": "delay",
+        "z": "2a02f9ed25362929",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "5",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "150",
+        "randomLast": "200",
+        "randomUnits": "milliseconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 2600,
+        "y": 940,
+        "wires": [
+            [
+                "c52f73bef9179d08"
+            ]
+        ]
+    },
+    {
+        "id": "c52f73bef9179d08",
+        "type": "http request",
+        "z": "2a02f9ed25362929",
+        "name": "Text to speech",
+        "method": "POST",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "http://localhost:12101/api/text-to-speech",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "authType": "",
+        "senderr": false,
+        "x": 2760,
+        "y": 940,
+        "wires": [
+            [
+                "476fd01b6beff9e5"
+            ]
+        ]
+    },
+    {
+        "id": "dc725df526048b65",
+        "type": "change",
+        "z": "2a02f9ed25362929",
+        "name": "Instruction",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "Now, interaction with items works similar to how you interact with things in real life. You might want to go to the sofa and grab the book to put it  from the couch onto the table.",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 2450,
+        "y": 940,
+        "wires": [
+            [
+                "afefc1069fdc5536"
+            ]
+        ]
+    },
+    {
+        "id": "1ede51ab7e02d2dd",
+        "type": "http request",
+        "z": "2a02f9ed25362929",
+        "name": "Text to speech",
+        "method": "POST",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "http://localhost:12101/api/text-to-speech",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "authType": "",
+        "senderr": false,
+        "x": 2760,
+        "y": 1000,
+        "wires": [
+            [
+                "b0639e5406c4b916"
+            ]
+        ]
+    },
+    {
+        "id": "476fd01b6beff9e5",
+        "type": "change",
+        "z": "2a02f9ed25362929",
+        "name": "Instruction",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "This way, I know that you want to speak to me. During the whole time you spend in this lovely home, you can always call me over. If you do not want me around, I can also go to my docking station that is in the bedroom if you tell me to.",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 2450,
+        "y": 1000,
+        "wires": [
+            [
+                "bb3adcecc146579d"
+            ]
+        ]
+    },
+    {
+        "id": "bb3adcecc146579d",
+        "type": "delay",
+        "z": "2a02f9ed25362929",
+        "name": "",
+        "pauseType": "random",
+        "timeout": "",
+        "timeoutUnits": "milliseconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "150",
+        "randomLast": "200",
+        "randomUnits": "milliseconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 2600,
+        "y": 1000,
+        "wires": [
+            [
+                "1ede51ab7e02d2dd"
+            ]
+        ]
+    },
+    {
+        "id": "9bb74a042a46bd9c",
+        "type": "delay",
+        "z": "2a02f9ed25362929",
+        "name": "",
+        "pauseType": "random",
+        "timeout": "",
+        "timeoutUnits": "milliseconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "150",
+        "randomLast": "200",
+        "randomUnits": "milliseconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 2600,
+        "y": 1060,
+        "wires": [
+            [
+                "f0086cbc1e774290"
+            ]
+        ]
+    },
+    {
+        "id": "f0086cbc1e774290",
+        "type": "http request",
+        "z": "2a02f9ed25362929",
+        "name": "Text to speech",
+        "method": "POST",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "http://localhost:12101/api/text-to-speech",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "authType": "",
+        "senderr": false,
+        "x": 2760,
+        "y": 1060,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "b0639e5406c4b916",
+        "type": "change",
+        "z": "2a02f9ed25362929",
+        "name": "Instruction",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "So in case you want me to go away, just ask me to go to the docking station, if you want me to come around, just call me over. Now, you are all set to get started! If you need help, just refer back to me, I am always happy to help you out. Have fun!",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 2450,
+        "y": 1060,
+        "wires": [
+            [
+                "9bb74a042a46bd9c"
+            ]
+        ]
+    },
+    {
+        "id": "a51b90409eed1d52",
+        "type": "change",
+        "z": "2a02f9ed25362929",
+        "name": "A:Cymry",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "Under the word “Cymry”, the Welsh understand a collective term for their own kind.  The term Welsh was introduced by  foreigners, which I find very interesting",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 920,
+        "y": 1360,
+        "wires": [
+            [
+                "b9049a084abc206b"
+            ]
+        ]
+    },
+    {
+        "id": "465cbfc0bd3f6dee",
+        "type": "change",
+        "z": "2a02f9ed25362929",
+        "name": "A:Bindery",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "A bindery is a bookbinders establishment. There, somebody was binding books or other articles. Something that is now done with machines like me ",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 920,
+        "y": 740,
+        "wires": [
+            [
+                "68f4b44338066edb"
+            ]
+        ]
+    },
+    {
+        "id": "1a3cbdd652f204d4",
+        "type": "change",
+        "z": "2a02f9ed25362929",
+        "name": "Instruction",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "well, not entirely like me!",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1470,
+        "y": 740,
+        "wires": [
+            [
+                "680e85a405d18583"
+            ]
+        ]
+    },
+    {
+        "id": "68f4b44338066edb",
+        "type": "delay",
+        "z": "2a02f9ed25362929",
+        "name": "",
+        "pauseType": "random",
+        "timeout": "",
+        "timeoutUnits": "milliseconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "150",
+        "randomLast": "200",
+        "randomUnits": "milliseconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 1140,
+        "y": 740,
+        "wires": [
+            [
+                "6f448be2ff87fca9"
+            ]
+        ]
+    },
+    {
+        "id": "6f448be2ff87fca9",
+        "type": "http request",
+        "z": "2a02f9ed25362929",
+        "name": "Text to speech",
+        "method": "POST",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "http://localhost:12101/api/text-to-speech",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "authType": "",
+        "senderr": false,
+        "x": 1300,
+        "y": 740,
+        "wires": [
+            [
+                "1a3cbdd652f204d4"
+            ]
+        ]
+    },
+    {
+        "id": "680e85a405d18583",
+        "type": "delay",
+        "z": "2a02f9ed25362929",
+        "name": "",
+        "pauseType": "random",
+        "timeout": "",
+        "timeoutUnits": "milliseconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "150",
+        "randomLast": "200",
+        "randomUnits": "milliseconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 1620,
+        "y": 740,
+        "wires": [
+            [
+                "857a7f4c27e9ea19"
+            ]
+        ]
+    },
+    {
+        "id": "857a7f4c27e9ea19",
+        "type": "http request",
+        "z": "2a02f9ed25362929",
+        "name": "Text to speech",
+        "method": "POST",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "http://localhost:12101/api/text-to-speech",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "authType": "",
+        "senderr": false,
+        "x": 1780,
+        "y": 740,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "1a641350ebd0c1f4",
+        "type": "delay",
+        "z": "2a02f9ed25362929",
+        "name": "",
+        "pauseType": "random",
+        "timeout": "",
+        "timeoutUnits": "milliseconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "150",
+        "randomLast": "200",
+        "randomUnits": "milliseconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 1140,
+        "y": 780,
+        "wires": [
+            [
+                "11535511f2db38a8"
+            ]
+        ]
+    },
+    {
+        "id": "11535511f2db38a8",
+        "type": "http request",
+        "z": "2a02f9ed25362929",
+        "name": "Text to speech",
+        "method": "POST",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "http://localhost:12101/api/text-to-speech",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "authType": "",
+        "senderr": false,
+        "x": 1300,
+        "y": 780,
+        "wires": [
+            [
+                "034f0bf60fcdb975"
+            ]
+        ]
+    },
+    {
+        "id": "034f0bf60fcdb975",
+        "type": "change",
+        "z": "2a02f9ed25362929",
+        "name": "Instruction",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": " this branch of medical science we call symptomatology. ",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1470,
+        "y": 780,
+        "wires": [
+            [
+                "354c7f8c1abf08f8"
+            ]
+        ]
+    },
+    {
+        "id": "354c7f8c1abf08f8",
+        "type": "delay",
+        "z": "2a02f9ed25362929",
+        "name": "",
+        "pauseType": "random",
+        "timeout": "",
+        "timeoutUnits": "milliseconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "150",
+        "randomLast": "200",
+        "randomUnits": "milliseconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 1620,
+        "y": 780,
+        "wires": [
+            [
+                "04aa3d3f390cb6df"
+            ]
+        ]
+    },
+    {
+        "id": "04aa3d3f390cb6df",
+        "type": "http request",
+        "z": "2a02f9ed25362929",
+        "name": "Text to speech",
+        "method": "POST",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "http://localhost:12101/api/text-to-speech",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "authType": "",
+        "senderr": false,
+        "x": 1780,
+        "y": 780,
+        "wires": [
+            [
+                "712f5e189c87d954"
+            ]
+        ]
+    },
+    {
+        "id": "712f5e189c87d954",
+        "type": "change",
+        "z": "2a02f9ed25362929",
+        "name": "Instruction",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "How weird to focus on the consequences of diseases all day without trying to cure them.",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1950,
+        "y": 780,
+        "wires": [
+            [
+                "d04b594215a85900"
+            ]
+        ]
+    },
+    {
+        "id": "d04b594215a85900",
+        "type": "delay",
+        "z": "2a02f9ed25362929",
+        "name": "",
+        "pauseType": "random",
+        "timeout": "",
+        "timeoutUnits": "milliseconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "150",
+        "randomLast": "200",
+        "randomUnits": "milliseconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 2100,
+        "y": 780,
+        "wires": [
+            [
+                "2a038134809f9c61"
+            ]
+        ]
+    },
+    {
+        "id": "2a038134809f9c61",
+        "type": "http request",
+        "z": "2a02f9ed25362929",
+        "name": "Text to speech",
+        "method": "POST",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "http://localhost:12101/api/text-to-speech",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "authType": "",
+        "senderr": false,
+        "x": 2260,
+        "y": 780,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "1a4fb30ebd6d751b",
+        "type": "change",
+        "z": "2a02f9ed25362929",
+        "name": "Instruction",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "So people look at how animals are built and try to come up with a hierarchical ordering that makes sense of mother nature’s plans!",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1470,
+        "y": 820,
+        "wires": [
+            [
+                "c3c39702748d84e9"
+            ]
+        ]
+    },
+    {
+        "id": "a957ec69eab5160b",
+        "type": "delay",
+        "z": "2a02f9ed25362929",
+        "name": "",
+        "pauseType": "random",
+        "timeout": "",
+        "timeoutUnits": "milliseconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "150",
+        "randomLast": "200",
+        "randomUnits": "milliseconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 1140,
+        "y": 820,
+        "wires": [
+            [
+                "d166be91fe8a9d95"
+            ]
+        ]
+    },
+    {
+        "id": "d166be91fe8a9d95",
+        "type": "http request",
+        "z": "2a02f9ed25362929",
+        "name": "Text to speech",
+        "method": "POST",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "http://localhost:12101/api/text-to-speech",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "authType": "",
+        "senderr": false,
+        "x": 1300,
+        "y": 820,
+        "wires": [
+            [
+                "1a4fb30ebd6d751b"
+            ]
+        ]
+    },
+    {
+        "id": "c3c39702748d84e9",
+        "type": "delay",
+        "z": "2a02f9ed25362929",
+        "name": "",
+        "pauseType": "random",
+        "timeout": "",
+        "timeoutUnits": "milliseconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "150",
+        "randomLast": "200",
+        "randomUnits": "milliseconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 1620,
+        "y": 820,
+        "wires": [
+            [
+                "7159e0408fb5c51f"
+            ]
+        ]
+    },
+    {
+        "id": "7159e0408fb5c51f",
+        "type": "http request",
+        "z": "2a02f9ed25362929",
+        "name": "Text to speech",
+        "method": "POST",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "http://localhost:12101/api/text-to-speech",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "authType": "",
+        "senderr": false,
+        "x": 1780,
+        "y": 820,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "21e1050adcea98c6",
+        "type": "change",
+        "z": "2a02f9ed25362929",
+        "name": "Instruction",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": " namely one, who is focused on extracting teeth.Good luck you will never have to search for one",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1470,
+        "y": 860,
+        "wires": [
+            [
+                "2ac44d36a5591c87"
+            ]
+        ]
+    },
+    {
+        "id": "e641a9ee2bd61e20",
+        "type": "delay",
+        "z": "2a02f9ed25362929",
+        "name": "",
+        "pauseType": "random",
+        "timeout": "",
+        "timeoutUnits": "milliseconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "150",
+        "randomLast": "200",
+        "randomUnits": "milliseconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 1140,
+        "y": 860,
+        "wires": [
+            [
+                "525c03184e48649d"
+            ]
+        ]
+    },
+    {
+        "id": "525c03184e48649d",
+        "type": "http request",
+        "z": "2a02f9ed25362929",
+        "name": "Text to speech",
+        "method": "POST",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "http://localhost:12101/api/text-to-speech",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "authType": "",
+        "senderr": false,
+        "x": 1300,
+        "y": 860,
+        "wires": [
+            [
+                "21e1050adcea98c6"
+            ]
+        ]
+    },
+    {
+        "id": "2ac44d36a5591c87",
+        "type": "delay",
+        "z": "2a02f9ed25362929",
+        "name": "",
+        "pauseType": "random",
+        "timeout": "",
+        "timeoutUnits": "milliseconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "150",
+        "randomLast": "200",
+        "randomUnits": "milliseconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 1620,
+        "y": 860,
+        "wires": [
+            [
+                "76c196b55123d86b"
+            ]
+        ]
+    },
+    {
+        "id": "76c196b55123d86b",
+        "type": "http request",
+        "z": "2a02f9ed25362929",
+        "name": "Text to speech",
+        "method": "POST",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "http://localhost:12101/api/text-to-speech",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "authType": "",
+        "senderr": false,
+        "x": 1780,
+        "y": 860,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "8fa999338063e26b",
+        "type": "change",
+        "z": "2a02f9ed25362929",
+        "name": "Instruction",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "well, not entirely like me!",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1470,
+        "y": 1200,
+        "wires": [
+            [
+                "cfe530d94f05e145"
+            ]
+        ]
+    },
+    {
+        "id": "fd2a02e3f79b8ae2",
+        "type": "delay",
+        "z": "2a02f9ed25362929",
+        "name": "",
+        "pauseType": "random",
+        "timeout": "",
+        "timeoutUnits": "milliseconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "150",
+        "randomLast": "200",
+        "randomUnits": "milliseconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 1140,
+        "y": 1200,
+        "wires": [
+            [
+                "f8fa96f7660e530a"
+            ]
+        ]
+    },
+    {
+        "id": "f8fa96f7660e530a",
+        "type": "http request",
+        "z": "2a02f9ed25362929",
+        "name": "Text to speech",
+        "method": "POST",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "http://localhost:12101/api/text-to-speech",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "authType": "",
+        "senderr": false,
+        "x": 1300,
+        "y": 1200,
+        "wires": [
+            [
+                "8fa999338063e26b"
+            ]
+        ]
+    },
+    {
+        "id": "cfe530d94f05e145",
+        "type": "delay",
+        "z": "2a02f9ed25362929",
+        "name": "",
+        "pauseType": "random",
+        "timeout": "",
+        "timeoutUnits": "milliseconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "150",
+        "randomLast": "200",
+        "randomUnits": "milliseconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 1620,
+        "y": 1200,
+        "wires": [
+            [
+                "d85c6c6e8cafcee5"
+            ]
+        ]
+    },
+    {
+        "id": "d85c6c6e8cafcee5",
+        "type": "http request",
+        "z": "2a02f9ed25362929",
+        "name": "Text to speech",
+        "method": "POST",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "http://localhost:12101/api/text-to-speech",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "authType": "",
+        "senderr": false,
+        "x": 1780,
+        "y": 1200,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "dc0fea900d2d4e8c",
+        "type": "delay",
+        "z": "2a02f9ed25362929",
+        "name": "",
+        "pauseType": "random",
+        "timeout": "",
+        "timeoutUnits": "milliseconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "150",
+        "randomLast": "200",
+        "randomUnits": "milliseconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 1140,
+        "y": 1240,
+        "wires": [
+            [
+                "ac135d72290d1159"
+            ]
+        ]
+    },
+    {
+        "id": "ac135d72290d1159",
+        "type": "http request",
+        "z": "2a02f9ed25362929",
+        "name": "Text to speech",
+        "method": "POST",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "http://localhost:12101/api/text-to-speech",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "authType": "",
+        "senderr": false,
+        "x": 1300,
+        "y": 1240,
+        "wires": [
+            [
+                "b6717ba1a747874e"
+            ]
+        ]
+    },
+    {
+        "id": "b6717ba1a747874e",
+        "type": "change",
+        "z": "2a02f9ed25362929",
+        "name": "Instruction",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": " this branch of medical science we call symptomatology. ",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1470,
+        "y": 1240,
+        "wires": [
+            [
+                "f10afe609f282f7f"
+            ]
+        ]
+    },
+    {
+        "id": "f10afe609f282f7f",
+        "type": "delay",
+        "z": "2a02f9ed25362929",
+        "name": "",
+        "pauseType": "random",
+        "timeout": "",
+        "timeoutUnits": "milliseconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "150",
+        "randomLast": "200",
+        "randomUnits": "milliseconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 1620,
+        "y": 1240,
+        "wires": [
+            [
+                "8350be1529690083"
+            ]
+        ]
+    },
+    {
+        "id": "8350be1529690083",
+        "type": "http request",
+        "z": "2a02f9ed25362929",
+        "name": "Text to speech",
+        "method": "POST",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "http://localhost:12101/api/text-to-speech",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "authType": "",
+        "senderr": false,
+        "x": 1780,
+        "y": 1240,
+        "wires": [
+            [
+                "236b27683abec8fb"
+            ]
+        ]
+    },
+    {
+        "id": "236b27683abec8fb",
+        "type": "change",
+        "z": "2a02f9ed25362929",
+        "name": "Instruction",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "How weird to focus on the consequences of diseases all day without trying to cure them.",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1950,
+        "y": 1240,
+        "wires": [
+            [
+                "26ee3c39fac08964"
+            ]
+        ]
+    },
+    {
+        "id": "26ee3c39fac08964",
+        "type": "delay",
+        "z": "2a02f9ed25362929",
+        "name": "",
+        "pauseType": "random",
+        "timeout": "",
+        "timeoutUnits": "milliseconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "150",
+        "randomLast": "200",
+        "randomUnits": "milliseconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 2100,
+        "y": 1240,
+        "wires": [
+            [
+                "8964b19e95c6aa2e"
+            ]
+        ]
+    },
+    {
+        "id": "8964b19e95c6aa2e",
+        "type": "http request",
+        "z": "2a02f9ed25362929",
+        "name": "Text to speech",
+        "method": "POST",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "http://localhost:12101/api/text-to-speech",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "authType": "",
+        "senderr": false,
+        "x": 2260,
+        "y": 1240,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "677bf07e10c10b72",
+        "type": "change",
+        "z": "2a02f9ed25362929",
+        "name": "Instruction",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "So people look at how animals are built and try to come up with a hierarchical ordering that makes sense of mother nature’s plans!",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1470,
+        "y": 1280,
+        "wires": [
+            [
+                "18174d1d2559612b"
+            ]
+        ]
+    },
+    {
+        "id": "f7a0e69aabe6df10",
+        "type": "delay",
+        "z": "2a02f9ed25362929",
+        "name": "",
+        "pauseType": "random",
+        "timeout": "",
+        "timeoutUnits": "milliseconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "150",
+        "randomLast": "200",
+        "randomUnits": "milliseconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 1140,
+        "y": 1280,
+        "wires": [
+            [
+                "db279e6cb0bc06ca"
+            ]
+        ]
+    },
+    {
+        "id": "db279e6cb0bc06ca",
+        "type": "http request",
+        "z": "2a02f9ed25362929",
+        "name": "Text to speech",
+        "method": "POST",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "http://localhost:12101/api/text-to-speech",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "authType": "",
+        "senderr": false,
+        "x": 1300,
+        "y": 1280,
+        "wires": [
+            [
+                "677bf07e10c10b72"
+            ]
+        ]
+    },
+    {
+        "id": "18174d1d2559612b",
+        "type": "delay",
+        "z": "2a02f9ed25362929",
+        "name": "",
+        "pauseType": "random",
+        "timeout": "",
+        "timeoutUnits": "milliseconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "150",
+        "randomLast": "200",
+        "randomUnits": "milliseconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 1620,
+        "y": 1280,
+        "wires": [
+            [
+                "2ce4bd7918ea422a"
+            ]
+        ]
+    },
+    {
+        "id": "2ce4bd7918ea422a",
+        "type": "http request",
+        "z": "2a02f9ed25362929",
+        "name": "Text to speech",
+        "method": "POST",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "http://localhost:12101/api/text-to-speech",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "authType": "",
+        "senderr": false,
+        "x": 1780,
+        "y": 1280,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "f1dcdff54be47dd3",
+        "type": "change",
+        "z": "2a02f9ed25362929",
+        "name": "Instruction",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": " namely one, who is focused on extracting teeth.Good luck you will never have to search for one",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1470,
+        "y": 1320,
+        "wires": [
+            [
+                "5d902393360b4709"
+            ]
+        ]
+    },
+    {
+        "id": "2d9880a90f10dcfe",
+        "type": "delay",
+        "z": "2a02f9ed25362929",
+        "name": "",
+        "pauseType": "random",
+        "timeout": "",
+        "timeoutUnits": "milliseconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "150",
+        "randomLast": "200",
+        "randomUnits": "milliseconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 1140,
+        "y": 1320,
+        "wires": [
+            [
+                "1a9a1b60cb188ee9"
+            ]
+        ]
+    },
+    {
+        "id": "1a9a1b60cb188ee9",
+        "type": "http request",
+        "z": "2a02f9ed25362929",
+        "name": "Text to speech",
+        "method": "POST",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "http://localhost:12101/api/text-to-speech",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "authType": "",
+        "senderr": false,
+        "x": 1300,
+        "y": 1320,
+        "wires": [
+            [
+                "f1dcdff54be47dd3"
+            ]
+        ]
+    },
+    {
+        "id": "5d902393360b4709",
+        "type": "delay",
+        "z": "2a02f9ed25362929",
+        "name": "",
+        "pauseType": "random",
+        "timeout": "",
+        "timeoutUnits": "milliseconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "150",
+        "randomLast": "200",
+        "randomUnits": "milliseconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 1620,
+        "y": 1320,
+        "wires": [
+            [
+                "700f319a373af217"
+            ]
+        ]
+    },
+    {
+        "id": "700f319a373af217",
+        "type": "http request",
+        "z": "2a02f9ed25362929",
+        "name": "Text to speech",
+        "method": "POST",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "http://localhost:12101/api/text-to-speech",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "authType": "",
+        "senderr": false,
+        "x": 1780,
+        "y": 1320,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "be7c64a03bf3ae49",
+        "type": "play audio",
+        "z": "2a02f9ed25362929",
+        "name": "",
+        "voice": "8",
+        "x": 1290,
+        "y": 1100,
+        "wires": []
+    },
+    {
+        "id": "7f1365c8d3165bc4",
+        "type": "file in",
+        "z": "2a02f9ed25362929",
+        "name": "Music",
+        "filename": "/media/fkirsch/KIRSCHBAG/Human-robot interaction/Laura/RhasspyAndNodeRed/Music/Feel The Rush.mp3",
+        "format": "",
+        "chunk": false,
+        "sendError": false,
+        "encoding": "none",
+        "allProps": true,
+        "x": 910,
+        "y": 1100,
+        "wires": [
+            [
+                "be7c64a03bf3ae49"
+            ]
+        ]
+    },
+    {
+        "id": "974d0b683d046897",
+        "type": "websocket-listener",
+        "path": "ws://localhost:12101/api/events/intent",
+        "wholemsg": "true"
+    }
+]
