@@ -1,14 +1,15 @@
 # I-Lo
 
-## Table of Files:
-- MP3 -> These are the sound files of what I-Lo is saying (if you do not use  Rhasspy's inbuild text-to-speech converter)
+## Table of Files(!):
+- MP3 -> These are the sound files of what I-Lo is sayingc dependent on the conditions (if you do not use  Rhasspy's inbuild text-to-speech converter)
+- Node-RED -> 
+- Node-RED/flows.json -> this is the flow we used with the above mentioned sound files
+- Node-RED/MP3_Flow.json -> this is the flow we used to play the audios in Node-Red
+- Node-RED/With_Yes_No.json -> this is an example for an advanced flow for Node-Red with not only text-to-speech but also the option immediately answering one of I-Lo's questions without using the wake word
 - Documentation.txt -> Here you can read everything in more detail, especially with 
 - I-Lo.zip -> this includes the body, all (C#-)scrips, animation
-- MP3_Flow.json -> this is the flow we used to play the audios in Node-Red
-- README.md -> This is what you are currently reading
-- With_Yes_No.json -> this is an example for an advanced flow for Node-Red with not only text-to-speech but also the option immediately answering one of I-Lo's questions without using the wake word
+- README.md -> this is what you are currently reading
 - all_introductions.txt -> these are the different introductions I-Lo has for the different conditions
-- flows.json -> this is the flow we used with the above mentioned sound files
 - rhasspy_sentences.txt -> here you can find our Rhasspy sentences and word pronounciations
 
 ## The idea !!!!?
@@ -23,7 +24,7 @@ This was the beginning of a tale, the tale of I-Lo: I-Lo is our version of a spe
 ## What we did
 - not really assistive, since we agreed from the very start, that any further assistance was a too big work load for the amount of time we were given (e.g. no carrying around)
 - the experiment itself consistet of two parts: 3 conditions;  
-- 
+- perfomrance issues (keys, two pc)
 
 ## What we used
 *To have a functioning I-Lo, we first needed the bodies of the speech assistant and robot we were going to put into our Unity repository.*
@@ -66,6 +67,13 @@ In the end, our flow consisted of the different conditions and the suitable audi
 ## How to work with this
 First and formost: Please read through the documentation for more detailed information and some of our ideas for improvement.
 
+If you installed all the sofware needed, we would recommend to first implement your chosen flow to Node-RED and your chosen intents to Rhasspy. Be aware that you might want to implement the pronounciations at the bottom of the rhasspy_sentences.txt file as well.
+Node-RED:
+- if you want to use the MP3_Flow in Node-RED, please change the paths according to the location of your audios
+Unity:
+- you would need to get the websocket from Rhasspy to get the intent and can therefore say 
+
+
 https://myshare.uni-osnabrueck.de/d/034e81fbff524338a1d9/
 
 ## Data references / Credits
@@ -81,4 +89,6 @@ Website: https://nodered.org/
 Project data Unity:
 https://myshare.uni-osnabrueck.de/d/034e81fbff524338a1d9/
 
-## A last word
+## A last word (!!!)
+
+If you are interested in this study or want to conduct a similar study, we would be happy to hear you approaches towards this.
