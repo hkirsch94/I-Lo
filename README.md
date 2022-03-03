@@ -2,6 +2,8 @@
 
 
 ## Rhasspy
+   -Hello
+    -Hello
 
 Github Repository Version 2.4: 
 https://github.com/synesthesiam/rhasspy
