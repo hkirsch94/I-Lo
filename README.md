@@ -1,13 +1,12 @@
 # I-Lo
 
 ## Table of Files(!):
-- MP3 -> These are the sound files of what I-Lo is sayingc dependent on the conditions (if you do not use  Rhasspy's inbuild text-to-speech converter)
-- Node-RED -> 
+- MP3 -> These are the sound files of what I-Lo is sayingc dependent on the conditions (if you do not use  Rhasspy's in-build text-to-speech converter)
 - Node-RED/flows.json -> this is the flow we used with the above mentioned sound files
 - Node-RED/MP3_Flow.json -> this is the flow we used to play the audios in Node-Red
 - Node-RED/With_Yes_No.json -> this is an example for an advanced flow for Node-Red with not only text-to-speech but also the option immediately answering one of I-Lo's questions without using the wake word
 - Documentation.txt -> Here you can read everything in more detail, especially with 
-- I-Lo.zip -> this includes the body, all (C#-)scrips, animation
+- I-Lo.zip -> this includes the bodies for the speech assistants, (C#-)scripts, animation and all further assets
 - README.md -> this is what you are currently reading
 - all_introductions.txt -> these are the different introductions I-Lo has for the different conditions
 - rhasspy_sentences.txt -> here you can find our Rhasspy sentences and word pronounciations
