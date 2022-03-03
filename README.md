@@ -6,6 +6,11 @@
 Github Repository Version 2.4: 
 https://github.com/synesthesiam/rhasspy
 
+Rhasspy Installation Guide 2.4:
+https://rhasspy.readthedocs.io/en/v2.4.20/installation/
+
+### Node-Red
+https://nodered.org/
 ## Unity
 
 Project data Unity:
