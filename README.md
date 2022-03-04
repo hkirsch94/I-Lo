@@ -97,7 +97,11 @@ If you want to use the MP3_Flow in Node-RED, please change the paths according t
 
 When opening Unity 
 get I-Lo's robot body and put the arms and gead as its children, then drag the body scipt into the body and the I-Lo script into the arms and head
-for I-Lo's stationary body, put the speech assistant scirp into there
+materials!
+make an object and put into it the !Rhasspy_connect scriptand connect this object with the I-Lo body via Player Nav Mesh!
+To not have the robot go through any furniture, we would recommend you to define the area over the navigation tab on the I-Lo body in which I-Lo will move via the Nav mesh agent.
+for I-Lo's stationary body, put the speech assistant script into there
+
 
 To get Rhasspy's intent directly into unity we used the package “websocketsharp-net standard” in the beginning which you can install via the Asset “NuGet” in Unity. You can use this package in a Script and filter the intent from the JSON String you get from Rhasspy.
 
