@@ -108,10 +108,10 @@ To get Rhasspy's intent directly into unity we used the package “websocketshar
 https://myshare.uni-osnabrueck.de/d/034e81fbff524338a1d9/
 
 ## Data references / Credits
-[1]: Unity
+[1] Unity
 https://unity.com
 
-[2]: Opensourced Asstes Unity:
+[2] Opensourced Asstes Unity:
 
 The Cabin: 
 https://assetstore.unity.com/packages/3d/environments/urban/furnished-cabin-71426
@@ -128,10 +128,10 @@ https://assetstore.unity.com/packages/3d/props/interior/meat-hammer-pbr-129061
 https://assetstore.unity.com/packages/3d/props/interior/pbr-ladle-129004
 https://assetstore.unity.com/packages/3d/props/interior/plates-bowls-mugs-pack-146682
 
-[3]: Blender
+[3] Blender
 https://www.blender.org
 
-[4]: Rhasspy
+[4] Rhasspy
 Github Repository Version 2.4: 
 https://github.com/synesthesiam/rhasspy
 
