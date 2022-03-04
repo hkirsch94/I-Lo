@@ -49,7 +49,7 @@ The collected data were evaluated and visualised with diagrams.
 Unity is a cross-platform game engine developed by Unity Technologies, which can be used to create three-dimensional (3D) and two-dimensional (2D) games
 as well as interactive simulations and other experiences.
 
-For our purpose we created a homely environment with the help of some opensourced assets[1]. This consisted of a furnished cabin in which the participants were able to interact with a version of I-Lo and some objects such as books and kitchen utensils.
+For our purpose we created a homely environment with the help of some opensourced assets [1]. This consisted of a furnished cabin in which the participants were able to interact with a version of I-Lo and some objects such as books and kitchen utensils.
 
 The version we used for this project is 2020.3.12f1.
 
@@ -95,35 +95,49 @@ If you installed all the sofware needed, we would recommend to first implement y
 
 If you want to use the MP3_Flow in Node-RED, please change the paths according to the location of your audios.
 
-When opening Unity
+When opening Unity 
+get I-Lo's robot body and put the arms and gead as its children, then drag the body scipt into the body and the I-Lo script into the arms and head
+for I-Lo's stationary body, put the speech assistant scirp into there
+
 To get Rhasspy's intent directly into unity we used the package “websocketsharp-net standard” in the beginning which you can install via the Asset “NuGet” in Unity. You can use this package in a Script and filter the intent from the JSON String you get from Rhasspy.
 
 https://myshare.uni-osnabrueck.de/d/034e81fbff524338a1d9/
 
 ## Data references / Credits
-[1] Opensourced Asstes Unity:
+[1]: Unity
+https://unity.com
+
+[2]: Opensourced Asstes Unity:
+
 The Cabin: 
 https://assetstore.unity.com/packages/3d/environments/urban/furnished-cabin-71426
+
 Plants: 
 https://assetstore.unity.com/packages/3d/vegetation/plants/plants-150261
 https://assetstore.unity.com/packages/3d/environments/low-poly-free-vegetation-kit-176906
+
 Books: 
 https://assetstore.unity.com/packages/3d/props/interior/qa-books-115415
+
 Kitchen Utensils: 
 https://assetstore.unity.com/packages/3d/props/interior/meat-hammer-pbr-129061
 https://assetstore.unity.com/packages/3d/props/interior/pbr-ladle-129004
 https://assetstore.unity.com/packages/3d/props/interior/plates-bowls-mugs-pack-146682
 
+[3]: Blender
+https://www.blender.org
+
+[4]: Rhasspy
 Github Repository Version 2.4: 
 https://github.com/synesthesiam/rhasspy
 
 Rhasspy Installation Guide 2.4:
 https://rhasspy.readthedocs.io/en/v2.4.20/installation/
-Website: https://nodered.org/
+
+[5] Node-RED
+https://nodered.org/
 
 
-Project data Unity:
-https://myshare.uni-osnabrueck.de/d/034e81fbff524338a1d9/
 
 ## A last word (!!!)
 
