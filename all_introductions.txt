@@ -52,6 +52,7 @@ During the whole time you spend in this lovely home, you can always call me over
 if you tell me to. So in case you want me to go away, just ask me to go to the docking station, if you want me to come around, just call me over.
 Now, you are all set to get started! If you need help, just refer back to me, I am always happy to help you out. Have fun!
 
+## same as C2; originally planned with gestures like pointing, so instead "go to the sofe" there would be "go over there"
 C3:
 Hi, my name is I-Lo, nice to meet you!
 I am the Robot of this place and today, your task is to help a little bit in here.
@@ -61,9 +62,9 @@ In total, there are three types of tasks. For one of them, you have to find a de
 some are about changing stuff in here and others are about making me do something. In all cases, what you are supposed to do is indicated very clearly.
 The session is over when you have fulfilled all the tasks.
 Speaking of changing things in here, if you have got questions about where certain items are or where they belong, please refer back to me, I would be happy to help you out.
-Before I forget to tell you, moving around here works via teleportation, so just point to a position with the right controller.
+Before I forget to tell you, moving around here works via teleportation, so just point to a position with one controller.
 The field you would end up in will be marked on the floor. You can try it out right away, try to teleport yourself somewhere over there!
-Now, interaction with items works similar to how you interact with things in real life. You might want to go (to the sofa / over there) and grab the book to put it 
+Now, interaction with items works similar to how you interact with things in real life. You might want to go to the sofa and grab the book to put it 
 from the couch onto the table.
 Please be careful that you address me with the words Hey I-Lo, if you want me to listen. This way, I know that you want to speak to me.
 During the whole time you spend in this lovely home, you can always call me over. I will find my way to this position then. If you do not want me around, I can also go to my docking station that is in the bedroom
