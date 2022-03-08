@@ -10,6 +10,7 @@
 - README.md -> this is what you are currently reading
 - all_introductions.txt -> these are the different introductions I-Lo has for the different conditions
 - rhasspy_sentences.txt -> here you can find our Rhasspy sentences and word pronounciations
+- Completed_Questionnaires.zip 
 
 ## The idea
 Following a human-robot interaction course at the University Osnabruck, we conducted this first approach of a study on **whether a robot evokes a stronger feeling of trustworthiness and integrity than a speech assistant** and **whether there are characteristics which influence these feelings**.
