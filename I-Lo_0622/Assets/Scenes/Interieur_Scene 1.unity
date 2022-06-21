@@ -985,7 +985,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 17
+  m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &154866868
 PrefabInstance:
@@ -2298,7 +2298,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4749945448324980, guid: a33884f9b265434498736dbc4c5bcf03, type: 3}
       propertyPath: m_RootOrder
-      value: 19
+      value: 18
       objectReference: {fileID: 0}
     - target: {fileID: 4749945448324980, guid: a33884f9b265434498736dbc4c5bcf03, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2503,130 +2503,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1001 &795596128
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 1189578481919193685, guid: cd9ac7f7fd8249d4ab238e70ab38ba79,
-        type: 3}
-      propertyPath: SavePath
-      value: C:\Users\labadmin\Documents\EyeTrackingData
-      objectReference: {fileID: 0}
-    - target: {fileID: 3180640553030814881, guid: cd9ac7f7fd8249d4ab238e70ab38ba79,
-        type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 4294967295
-      objectReference: {fileID: 0}
-    - target: {fileID: 3292186979233332987, guid: cd9ac7f7fd8249d4ab238e70ab38ba79,
-        type: 3}
-      propertyPath: EnableEyeVersion
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3675657049137311604, guid: cd9ac7f7fd8249d4ab238e70ab38ba79,
-        type: 3}
-      propertyPath: _eyeTrackingDataFrames.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3675657049137311605, guid: cd9ac7f7fd8249d4ab238e70ab38ba79,
-        type: 3}
-      propertyPath: SetSampleRate
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3675657049137311605, guid: cd9ac7f7fd8249d4ab238e70ab38ba79,
-        type: 3}
-      propertyPath: _hmdTransform
-      value: 
-      objectReference: {fileID: 1053750705}
-    - target: {fileID: 3675657049137311605, guid: cd9ac7f7fd8249d4ab238e70ab38ba79,
-        type: 3}
-      propertyPath: SetPenetratedLayers
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3675657049137311610, guid: cd9ac7f7fd8249d4ab238e70ab38ba79,
-        type: 3}
-      propertyPath: m_Name
-      value: EyetrackingManager
-      objectReference: {fileID: 0}
-    - target: {fileID: 3675657049137311610, guid: cd9ac7f7fd8249d4ab238e70ab38ba79,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3675657049137311610, guid: cd9ac7f7fd8249d4ab238e70ab38ba79,
-        type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 4294967295
-      objectReference: {fileID: 0}
-    - target: {fileID: 3675657049137311611, guid: cd9ac7f7fd8249d4ab238e70ab38ba79,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 16
-      objectReference: {fileID: 0}
-    - target: {fileID: 3675657049137311611, guid: cd9ac7f7fd8249d4ab238e70ab38ba79,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3675657049137311611, guid: cd9ac7f7fd8249d4ab238e70ab38ba79,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3675657049137311611, guid: cd9ac7f7fd8249d4ab238e70ab38ba79,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3675657049137311611, guid: cd9ac7f7fd8249d4ab238e70ab38ba79,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3675657049137311611, guid: cd9ac7f7fd8249d4ab238e70ab38ba79,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3675657049137311611, guid: cd9ac7f7fd8249d4ab238e70ab38ba79,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3675657049137311611, guid: cd9ac7f7fd8249d4ab238e70ab38ba79,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3675657049137311611, guid: cd9ac7f7fd8249d4ab238e70ab38ba79,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3675657049137311611, guid: cd9ac7f7fd8249d4ab238e70ab38ba79,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3675657049137311611, guid: cd9ac7f7fd8249d4ab238e70ab38ba79,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6431870160326067069, guid: cd9ac7f7fd8249d4ab238e70ab38ba79,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6431870160326067069, guid: cd9ac7f7fd8249d4ab238e70ab38ba79,
-        type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 4294967295
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: cd9ac7f7fd8249d4ab238e70ab38ba79, type: 3}
 --- !u!1 &821953551 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1000012403556238, guid: 23d25b2e2d4364dd4b92c52ef40cd36e,
@@ -7051,7 +6927,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 18
+  m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
 --- !u!1001 &2077439240
 PrefabInstance:
