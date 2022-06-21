@@ -1,0 +1,16 @@
+{
+  "source": "Unity",
+  "applications": [
+    {
+      "app_key": "application.generated.unity.ilo.exe",
+      "launch_type": "url",
+      "url": "steam://launch/",
+      "action_manifest_path": "C:\\Users\\labadmin\\SynologyDrive\\I-Lo_28.01.2021\\I-Lo_28.01.2021\\Assets\\StreamingAssets\\SteamVR\\actions.json",
+      "strings": {
+        "en_us": {
+          "name": "I-Lo [Testing]"
+        }
+      }
+    }
+  ]
+}
